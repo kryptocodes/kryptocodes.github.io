@@ -14,4 +14,4 @@ don't care
 
 **kandukaatha** and _kandukaatha_ and `kandukaatha` 
 
-[Link](https://i.pinimg.com/originals/13/68/08/136808267b1358c83760417419518367.jpg) 
+<img src="https://i.pinimg.com/originals/13/68/08/136808267b1358c83760417419518367.jpg"> 
