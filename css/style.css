@@ -18,6 +18,9 @@ body{
 h2,.white{
     color: #fff;
 }
+h3,.white{
+    color: #fff;
+}
 
 a{
     color: #7A7C80;
@@ -56,6 +59,11 @@ a{
     margin-bottom: 10px;
 }
 
+.section-2 h3{
+	font-size: 1.7rem;
+	margin-bottom: 10px;
+}
+
 .section-2 p{
     font-size: 1.1rem;
     padding-bottom: 10px;
@@ -68,6 +76,11 @@ a{
     font-size: 1.2rem;
     padding-left: 0;
     width: 100px;
+}
+
+.section-2 img {
+    max-width:98%;
+    height:auto;
 }
 /* animations / utilities */
 .section-2 a:hover{
