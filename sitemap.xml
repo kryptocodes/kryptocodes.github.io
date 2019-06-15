@@ -3,6 +3,17 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://kryptocodes.github.io/post/</loc>
+    <lastmod>2019-06-14T19:13:25+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kryptocodes.github.io/</loc>
+    <lastmod>2019-06-14T19:13:25+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://kryptocodes.github.io/about/</loc>
   </url>
   
@@ -13,11 +24,6 @@
   
   <url>
     <loc>https://kryptocodes.github.io/tags/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://kryptocodes.github.io/</loc>
     <priority>0</priority>
   </url>
   
