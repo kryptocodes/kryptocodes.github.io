@@ -6,10 +6,22 @@
     <description>Recent content in Posts on ~</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 11 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 14 Jul 2019 14:19:35 +0530</lastBuildDate>
     
 	<atom:link href="https://kryptocodes.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Rename a local and remote branch in git</title>
+      <link>https://kryptocodes.github.io/posts/post/</link>
+      <pubDate>Sun, 14 Jul 2019 14:19:35 +0530</pubDate>
+      
+      <guid>https://kryptocodes.github.io/posts/post/</guid>
+      <description>if you have named a branch incorrectly and pushed to the remote repository or more precisely if you think you have messed up then follow this steps
+1.) Rename your local branch If you are on the branch you want to rename:
+git branch -m new-name if you are on different branch
+git branch -m old-name new-name 2.) Delete the old-name remote branch and push the new-name local branch git push origin :old-name new-name 3.</description>
+    </item>
     
     <item>
       <title>Open Source</title>
