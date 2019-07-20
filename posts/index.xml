@@ -6,10 +6,20 @@
     <description>Recent content in Posts on ~</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 14 Jul 2019 14:19:35 +0530</lastBuildDate>
+    <lastBuildDate>Sat, 20 Jul 2019 15:12:20 +0530</lastBuildDate>
     
 	<atom:link href="https://kryptocodes.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Git For Newbies</title>
+      <link>https://kryptocodes.github.io/posts/three/</link>
+      <pubDate>Sat, 20 Jul 2019 15:12:20 +0530</pubDate>
+      
+      <guid>https://kryptocodes.github.io/posts/three/</guid>
+      <description>Before we start make sure git --version command successfully returns. If the output is something like command not found then please make sure Git is properly installed on your machine. If you haven&amp;rsquo;t installed git then download from this Git Link My machine output is shown below. Output on your machine might be different.
+ Commands that a user should type on his/her terminal are prefixed with the shell prompt symbol $.</description>
+    </item>
     
     <item>
       <title>Rename a local and remote branch in git</title>
@@ -34,15 +44,6 @@ Blah blah it all started somewhere and now we are here
 Smells like open source
 Android ? prolly you would be using android device right now ? welp that&amp;rsquo;s a Open source
 So what is Open source? Open Source is a term denoting that product includes permission to use its source code, design documents,or content.</description>
-    </item>
-    
-    <item>
-      <title>Random post</title>
-      <link>https://kryptocodes.github.io/posts/one/</link>
-      <pubDate>Wed, 10 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://kryptocodes.github.io/posts/one/</guid>
-      <description>It all started with random quotes and random questions I know that&amp;rsquo;s weird Pretty much that was the truth, I really dunno why I am posting this here I have literally no idea.. What I am doing. I thought of drafting this post Uh and done&amp;hellip;. I was planning to add some other thing into this prolly android related stuffs</description>
     </item>
     
   </channel>
