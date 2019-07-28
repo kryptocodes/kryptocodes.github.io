@@ -3,13 +3,23 @@
   <channel>
     <title>Srivatsan</title>
     <link>https://kryptocodes.github.io/</link>
-    <description>Recent content on ~</description>
+    <description>Recent content on Srivatsan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 20 Jul 2019 15:12:20 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 28 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://kryptocodes.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Install Realtek WiFi driver for GNU/Linux</title>
+      <link>https://kryptocodes.github.io/posts/four/</link>
+      <pubDate>Sun, 28 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://kryptocodes.github.io/posts/four/</guid>
+      <description>Table of Contents  Getting Internet Finding Device Prerequisite  I&amp;rsquo;ve been doing a lot of Linux installations lately and one very annoying thing that I found in 2 laptops was the non availability of WiFi driver. Apparently, it&amp;rsquo;s a new hardware and is not in the Linux kernel.
+The hardware is Realtek device d723. This new WiFi hardware is being shipped in new PCs and laptops now. Without having the internet, one can&amp;rsquo;t do almost anything.</description>
+    </item>
     
     <item>
       <title>Git For Newbies</title>
@@ -52,7 +62,8 @@ So what is Open source? Open Source is a term denoting that product includes per
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://kryptocodes.github.io/about/</guid>
-      <description>A 17 y/o kiddo who thinks lot about coffee and computers. There are two things he really cares about improving knowledge and technology for a cause</description>
+      <description>A 17 y/o kiddo who is a coffee addict and Otaku.
+I&amp;rsquo;m just about the most boring type of person you could possibly imagine nah i&amp;rsquo;m not a robot :-) I can print Hello world in 5 different languages doesn&amp;rsquo;t means i&amp;rsquo;m a good programmer</description>
     </item>
     
   </channel>
