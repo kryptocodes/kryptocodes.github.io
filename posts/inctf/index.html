@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Srivatsan Thumati Balaji">
+    <meta name="description" content="personal website">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Journey of my first CTF (InCTF 2019)"/>
+<meta name="twitter:description" content="Note : This blog post is all about my experience at InCTF 2019.It was organised by India’s #1 and World’s #20 CTF team as per ctftime.org ratings of 2019.
+I had a chance of attending my first jeopardy CTF competition on 28th December 2019. As an infosec conference first-timer I would like to share my experience.
+So CTF? WTF? CTF events, Capture the Flag, are online team-based or individual competitions in which eihter groups or individuals race against one another to solve a list of cybersecurity challenges (i."/>
+
+    <meta property="og:title" content="Journey of my first CTF (InCTF 2019)" />
+<meta property="og:description" content="Note : This blog post is all about my experience at InCTF 2019.It was organised by India’s #1 and World’s #20 CTF team as per ctftime.org ratings of 2019.
+I had a chance of attending my first jeopardy CTF competition on 28th December 2019. As an infosec conference first-timer I would like to share my experience.
+So CTF? WTF? CTF events, Capture the Flag, are online team-based or individual competitions in which eihter groups or individuals race against one another to solve a list of cybersecurity challenges (i." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://kryptocodes.github.io/posts/inctf/" />
+<meta property="article:published_time" content="2019-12-31T19:01:20+05:30" />
+<meta property="article:modified_time" content="2019-12-31T19:01:20+05:30" />
+
+
+    
+      <base href="https://kryptocodes.github.io/posts/inctf/">
+    
+    <title>
+  Journey of my first CTF (InCTF 2019) · Srivatsan
+</title>
+
+    
+      <link rel="canonical" href="https://kryptocodes.github.io/posts/inctf/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="https://kryptocodes.github.io/css/coder.min.71ef1afd2d8588ee19fc8f0058cf6408c7cff775a8b409b47df54091d0ef87b5.css" integrity="sha256-ce8a/S2FiO4Z/I8AWM9kCMfP93WotAm0ffVAkdDvh7U=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="https://kryptocodes.github.io/css/coder-inverted.min.b275a7d098cfe39135a5644e9c6d811e77fc4bdeac01e8e339c7d767146340a8.css" integrity="sha256-snWn0JjP45E1pWROnG2BHnf8S96sAejjOcfXZxRjQKg=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+
+    
+    
+    <link rel="icon" type="image/png" href="https://kryptocodes.github.io/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://kryptocodes.github.io/images/favicon-16x16.png" sizes="16x16">
+
+    <meta name="generator" content="Hugo 0.59.0" />
+  </head>
+
+  <body class=" inverted">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://kryptocodes.github.io/">
+      Srivatsan
+    </a>
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://kryptocodes.github.io/about/">About</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://kryptocodes.github.io/posts/">Blog</a>
+          </li>
+        
+      
+      
+    </ul>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">Journey of my first CTF (InCTF 2019)</h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fas fa-calendar"></i>
+              <time datetime='2019-12-31T19:01:20&#43;05:30'>
+                December 31, 2019
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fas fa-clock"></i>
+              3 minutes read
+            </span>
+          </div>
+          
+          
+        </div>
+      </header>
+
+      <div>
+        
+
+<p><img src="https://lh3.googleusercontent.com/S2np8_U0cYL8P2oFVxWSrPE0wen4pgIpWfUTznrXMSSyr-MD7LDOZvTujxr6NxcGRylOu02xn9ONHqWbalHXX8HOH-l1KRzqWjEf1jMIqqwpjxodnDZMtmzX-g6QVJnG3IF1sGm90YD23N4S87HXFA4on56GpbRaHRIoadp2nTo01mIvIWwimyK6V-Vh_6vP0bWgvfoQSYl7G2ZmMjcc83KIXUUbkJMTDGGyFPs1LqfHoZ3O41AXwhAk_lQCZR-4clZnEEW6s0i1vOnq05KS_A1J-SxQl_yXur5soLIi649ZP9pA22j9HCy1DirU2FeKkJZDu0qic9WrsjodzMV6FJmEntMP27tX5krsCimA_elC85S7tR3iwmnU2aNGbck6UTek8sYT2Pg75v08bR_1JQUOy_y4f6jxn21jb-LPuE2AP8QiLt1kbXR7dB9lYWffjzjpJ__rAK0PzzP90ytMYY-P0EYIKBrY1xm4ZuJOQcFYNgKl_lOLRAjpzaXfzhAwlDPo_AFfseElEFlQIMwHYfytSnOStEOvrMuFN--jZfZTfKL9UVZr0gE7V8dzy96l-srEtVHN-aKVSE5VV1DtptHkZyX5irwRUke3qOiSeycCvuCAFrhVzPUw1Qzw0htM1C_-wFS0bOXXCxdLqK9PBfmCmyrx1-XgtVGh2MvAln0QRP-MePIDWds0EcVdOz2TTRAKwkSd0wZOKIKPFagvMb8Pyu48fGMNDqb2qs3BoQ2QVA6i=w667-h500-no" alt="InCTF" /></p>
+
+<p><strong>Note</strong> : This blog post is all about my experience at InCTF 2019.It was organised by India’s #1 and World’s #20 CTF team as per ctftime.org ratings of 2019.</p>
+
+<p>I had a chance of attending my first jeopardy CTF competition on 28th December 2019. As an infosec conference first-timer I would like to share my experience.</p>
+
+<h1 id="so-ctf-wtf">So CTF? WTF?</h1>
+
+<p>CTF events, Capture the Flag, are online team-based or individual competitions in which eihter groups or individuals race against one another to solve a list of cybersecurity challenges (i.e. “capture flags”) in a fixed amount of time. The team or the hacker who earns the most points from capturing flags wins. These competitions have become a hallmark of cyber-security and hacking culture and give students a chance to gain practice and exposure to cybersecurity skills as well as broader problem solving and critical thinking strategies.</p>
+
+<p><img src="https://lh3.googleusercontent.com/FUPGwpnHmrKGLTN4PIeE9mx23dALOWvfWQc5SdbhztOUuXjG2EIoz2H1w1UpCq5wpJEGRMlUCyggV36gFsd0BtcM2tLOxcygvlJYdW7S37mHXaLbZAygWzsaxQPv7AkfPpFOn7Xx9RviABpBmANwS2w9Mnp8zu25nSu-fOVkUadmYkwTW9dK6jgknJ4YQfNpovSsKkyKHJaiSYl6vMrQfkb257nDjnwOuXPSwxE9d84b0KyRaNdUe549ORMq_kaaDm0eMY03VJiO6e1TTAFUz88OqPYPbarTQ9sBcanqRlvkLCmqet7jy3D9D-68V-h_j6B6DHx9GSvV-3B2UvBWuDBFK9LVgLLS65zKwUB8QpdXa0HIt18f3LOIIalHC6M7yA78LxazEWVAvUjsqAA9mImjuhj-1Y9q-khWsNLtslGWctLo-i1PumkmfWBmZr6Bhc1HymfSxDTWdBy8cUj2mybtc62o07rqhPyScBlC0lw_uGT0ECIkuDzqqvqGFEZYgaHdEaf-iFsv9PoBkfxanLU0RUn_Huuc3wKsMHloWgpqSeU04RBMK1IOPGOzRHSDImgqxWcDVie71upy9-l22ajxnNFLxTO6UnwmJF4Tj1JTK5WflgXD0NDb8BF3aaFayqF9tEJ2mOdsMfBHVFemMc9dZIyZZg62o53RYvW2c2NuCNloZH5NTdZ0MPnHm7Jt7YEflL2AjomfcV44kjep5ug3KCX_bDayWKqzaf8nD8MekhMD=w667-h500-no" alt="conference" /></p>
+
+<p>One thing that is amazing about InCTF is that it is powered by volunteers who love organizing the event, and you can see they are enjoying it a lot. Dozens of volunteers spend hours of their free time to prepare challenges for the contest, to negotiate the conference talks with the speakers, to take care of the registration and so on. But we could tell they actually love it! During the event, they were wandering around us, smiling at everyone and making sure we are enjoying ourselves.</p>
+
+<p>Another thing you shouldn’t miss if you ever plan to attend InCTF is the unique CTF competition. 150 participants in multiple labs have 5 hours to solve cunning challenges, and it is terrific.</p>
+
+<p>All I knew about a CTF competition before I departed for Vidyut in InCTF 2019 was that you work in a team who solves various challenges to obtain secret messages (flags). The challenges vary in difficulty and require a range of skills such as reverse engineering, web hacking or forensics.Welp thanks to Venu bhaiya and geethna didi who actually helped me</p>
+
+<h1 id="inctf">InCTF</h1>
+
+<p>It all started with</p>
+
+<p><img src="https://lh3.googleusercontent.com/2RtWA0XcKwguJdy45ThgH3PYnZWbCoto0gs7Ra6h1OlmbHqFWZqSJ3nq96x8KNwXmXX6tVRvbEVq-5UVxHX4-DFVktMgjO_aTIFGUMznAPZpE_hqUBaORUW_IGW277PMydEhn4tx9jPtUwN3B_-xtVrROMIhKq0ijag6jYt_IX1KHJrpL6kva1z6AspOhyhZYoCLlwlq7WfEfL_9P8Kit-KtBcxhbcUwPbQMr1ilK9GGi2YBD0ew-6gZJ1qboeI93wJwfdp97to4CuJCPomXJziBl6UqV6T2qfCjhvA4FmmFoGNnOHYuaOf16DFlR0HD_SQ2FTgLNxoPzRUOBoDLWY_4GLi0cCsmju7wmYVaMIO5fFVLUroLzHQI42hQnPqxTzPNvIUwSGJ-7JIiLW8sIacNizvULLoa7oaQcBH387WkJbqcbXY81Kv34vaaRA-Py0Gy6f4XFl5WlFQOHROeP8ZyLSsZC_88YZxtgMrOp-Bqr6kLBBde4zZ7jb6F2rXmbdkg2E0DmLQ348x8xi-Tde1IKPXBQjxgp18CTMSIT--EPBUMtpZF7fmLf89e3bm78O9UVbZMBAZZPDRNHoGZQXBo2NHujD6T4GMHQUjKP_y8eX_VZkB1Bkw-Wr0iY99Ln3NpwcEDG9vVBoV38k5nJOkYpaiDJTn3-76GlwtRE6XmXEacXg-ADDg=w633-h625-no"  width="300" height="300"></p>
+
+<p><img src="https://lh3.googleusercontent.com/mz0HDL63YA2h6rBxmiDD71q_AeScrZTjQYdWQrDe2ehKmhVil31vHz6Bo1MYR0PLrnruLvEL2RApfC3jIh5FeEn_oPpv-tBk8WVCVbAMTo02ePN298BL2W9OCoV7rgGU2liSrZ7peyC7GXEoP_IBpPDHpGSOKZ3-qnhr4EUrMlhEm6WcoTSsR_GLDFiyOuEI_PfKW7sqE0lOaU6ZfryGZzRv2rRF9eXqxvMmbTftAFcoOPaUl3sZBFTGGb0QMFBeTU9u9dPrIaKq_AmGV9LoxzItYOomxEugkRndx-nZNka2Dc84D9N3HhrClBvheoldl1z3UDP2XCO2X7dGzyU7J4odCmzp_pIUUmZ8p9Ow15Rk3XujP-lzuoLIJsZf5HBgSRettjKSkCGP8VAl0-tDYMUgzxhTDnJgqEfGIS2ybrrjyHCddkdsEU4OyHR69J3N8q5AoqXGfETJpt7IfdX9hEUhQDI8HGh0JAjv1ioac1lunSDHPxnpfay2o7xg_vgTrMDiYsJ-HjkPhw3xNIy2kj4SQirrqmv-Eyx9mt53128Kc4qcG0q-XGxJLIOdSnWKrRSoQf7VkOZRJHWEmBsCYQcoZ5sXFd1rrBtuEZBsAuTc1gfxj7w0sNkmcl4mI68TqZdA3g5Kqp7ZVFoCprfsD25kmL77WMbXk8wmCCV6K_PlwMjWQq4iwDU=w313-h625-no" alt="Dhivya_Ma'am" /></p>
+
+<h1 id="inctf-finals-call">InCTF Finals Call</h1>
+
+<p>we had a mock CTF as a qual round it was Jeopardy style. I was paired with my nerdy friend Gowshik Prakash who was student coordinator for cybersecurity club in my college</p>
+
+<p>unfortunately, we ended up backing 1st place with 1154pts tho i wasn&rsquo;t clocking into
+<img src="https://lh3.googleusercontent.com/jjtA-gITSHoLm3JcuS4AYjfUxpPwmXpcng76e0PmuoswUYP5gauu0hGruf0eFXHk9bnqpjl4-4Yz4E6Uw6Ljj60QB5V27VeevkgWXzVE9pc4aJqNitpICeb_marxOVy3slJ8eVWpMA-RW0DL531RDDBE2latdFhm6tkr5re3CI6WUw8wtQ9j9YGA9ZzuQXGbL2CpKNgkxZzzN_WGM5s-SBXhTKGShYKyBCNlO6JcJShwaV0IRzqOkB42Qbhg0L9PHCYVc2P9g9ONtyja5TDQPY13iOUgGQ3wBx1GD2GLiY_EKtwFdMy0LrkDfcvFSFstgXvt1-i-XS2NDtPYjO2ePLNFqmKWD3Ij3HhkqwW1qewnzkLJe1QbsGI4yi8FYC5QT7EkV6sIf4609Y90ERa-xhtLP15gUhPBkolXClML0nhIoPFs3x8iOMp69PPjeNcIZ9Bd-itwmVObxiNGl--kmM1ilXArYM8MkdO79vyEGnh1jNxZxWBoowoY4WbGtRqgb5OCJIpkyigIJX1v0m5TJXr6_LKej4qAptKd5asij41mcWWTHZJjTBnhNSlvx7fPaLrBC0FjORI7aE6yuINV0DViSRG2UpL30xkQXKP4uD4XlagR4pcHa5kNDzMtyKWJRKofkhOtIZrh1pcrWWyMoYcW6LAhQ5rd3yYeqQRTtFNgOpM8LYd0XTI=w770-h625-no" alt="ctfqual" /></p>
+
+<p><em>Me and Gowshik(Team W33B5)</em></p>
+
+<p>for our surprise our hod announced the top three team would be selected for inCTF</p>
+
+<h1 id="inctf-finals-day-1">InCTF Finals (day 1)</h1>
+
+<p><img src="https://lh3.googleusercontent.com/1gEScbe5rsRJASLMbNtxOUNC9cVexlciupVwTNyZQ8QmDIgaknRFTcwaANGeRYq-saSSA9hoddYTuP2Lbud0ZJb50HY3Qj7uSKljS5tSVbGn1r_3Mgj-R0nrafq-pNVB_saKD6nn-37dWwJP_O4h5EZ1lCML_Yhoyw3sKPU_2LfT4kpJ8fHK5fRYoucsYpmkJF3Evjr9HsdkIKhL950b9p0_9ZfckbvQ3ofLevlO8ECIeYsF8n5WgE-cwACLRnP75rNe7auQMgwE7CSEkWx2jA73WcRJ8VYh4Puob9IV-V18jDEAD_PSMJ3xqq5xLcjk0qTQpWLEN08jMgGGjhlbi9xrSpql7aAMjrWWvGNZIkX-pOTYFHrsMQjqkw-ykexxW0gKc1TXj9XqtH-WLrMV4JvXDyizP8t8AM1BoPaTMA7wWLAUgsgMYAZR_j-xAVUsNvdEDDZ-loiUzewbrvSxNPsov9zqMZo1h5k2VKZBJGBVCr-QO6FvK4zHuPwUNH-CsqWOMnz8WsgxYt6kq-w-wcmslheBMOsM65ySPkGfsDBTnPqzc2oSDcc4Jo_bWUBFS21XsRo9l3J6qZDG0mrPUkiAIW_upfeCdM1VDhGO9JMRsWFtxDjtfB0362YZ-NzMx602LBah_VBcJiwDsFaXjR3UGIIOVSRYp7SF5YCvZPE5-WdONLK_NU4=w799-h625-no" alt="inctf" /></p>
+
+<p>Welp our team was the last to arrive there.It was 3-days event from 28-12-2019 to 30-12-2019,First day we had several talks by professionals .The event inaugurated with a session about <code>Intro to Cybersecurity by Cisco Professionals</code> and followed by talk about Cyberoam Startup And Experiences by <strong>Hemal Patel</strong> <code>who is the founder and ceo of cyberoam</code> and we had lunch break the food was damn good (atleast for a typical amritian) and the afternoon session continued with talk about  National Informatics Centre - CERT and followed by <strong>Lt Col CH Kumar</strong> about Dark web it was cool i got to know about the TOR vulnerability and Whonix</p>
+
+<p><img src="https://lh3.googleusercontent.com/xxFOtIU6bxji8sEoW_DsdMRul8_3enUnTcmwGzwy1kIU94HHEjMlc0DR8fBv5c9HA7HOPRc6kTyLazZlQs9zhxHj6M0MnF3ZRJHU6N8FQ-Uj6HWZRADjmqLFH0ZO5UJ0bYGEBrZsPKyM19sKGEEUFht_RwCOQOLFTu506EuN_hgvNsa1O6bqE-hzAVThzXmJwD386qYRaWCsWUxAKfGw6XjEzKg8BplmwznxC50rnLCdrCiPrzb7KIdchx2uMpZqlxbo76vZWGb8k5H9n6rxDywffkoQ99KdfBkMv9LYKsWFirL3ITtDqM2qCQC-fzfkyygVFf5s6-USPbGaSF1RfOof9M7Fq58a1cl68wVHhHlL7pyQlF-8DwEiXU7QpJviT42R-9WERLRfvn1OmomXkeV_h_b3qNfGTqEmIhdoTNPp3BSqSFxPVQSbk53k7HKY_2NQVO6ISL572lUnl68aJiAOrev-QRhOp3K5inqvQiItRfcPQ3PPRPVjFUmoxoPuvMSyn3h7sCfUiEwjO__aVHElphgRqjlvlz36LFruyXsT053DQGZzwlcosmFb4tc3j5jXBT3EZ6JylSrobS2rjzx3tMrPZ3S-Vpeqcq-XbOVKB_1MDz-SXuWvOrGeVYsHXkEn0x2i597DCKcVS45UZfmm7azQOuQIKDoPteClwn_xt-8Otc_b-5w=w1366-h578-no" alt="" /></p>
+
+<p>And the day ended with campfire which i didn&rsquo;t participated but meet some cool people
+<img src="https://lh3.googleusercontent.com/BzQg8p8XzTUKarjOwnSEexi4dkyNBiHxGGIrGcykKxv2MarfVV1mn3CWB7sPwsMTxXK8BUIAX2W0k5XLGI1dlEA4QrbpCzRcr22Yc8Mu5AC07uJTqkS9MpWxZ1BsC1Y12e9g6x_cZomLIOn0lCoUSrpUiCpq4laePfCsEUVoWaDW_IWP0s2w6L_iJAqbuH27roaD_9ecMpGzDWS1nq1M7ihDLbL4QLCX-iFclERGpbvlm3VC11iu4s7QklW_I32fXYsJXdQ0KcHtaEAqs8Sm2OlicNmVUy2UwSAXq8Xh5huwfbPtA_OA75XTgBVeEVSHsQ3gOXjzdnGTGAhn4gwaE7TAb26QlIKt7DIymOuJe6fM6N1H3WkwTUSuPKw6oBUwNrKIXyO3TupFfOROvHDP4PCenAvu8xSohRSS-Oweo9UrhemjcYEzgmq9aVMMLMNjyzEMIyg0cJ4c1Ka7KMnZ6F1AEWo0Frhy7rzS6d8T6Akl_VrcIA0q3mu3ZYiURjrkC4bGm-qZYXKiZG2K6VPfHiu57u4_G5zoas__DQg8MMFiP-N6CQ5p7QBw39EIuA2ind8JBXMIpKryVXk-zpXBS7xT07CRuqqFIGD0MzKXb3YmEVs18fpCB_hZzlg1zz0mGvmmonYoDiLN1pQrfrnZFFppcd9R5VlUPkf6snEmBDyR53KGY62MQHw=w463-h625-no" alt="" /></p>
+
+<h1 id="inctf-finals-day-2-and-attack-defence-ctf">InCTF Finals (day 2) and Attack&amp;Defence CTF</h1>
+
+<p>On 29 / 12,Morning we again had talk session by <strong>Heeraj Nair</strong> (CEO of TheBugBounty) and <strong>Sreelakshmi P</strong>(Security Engineer ,VMware) about Attack Surface Analysis Using Threat Model and in the afternoon we had photo session</p>
+
+<p><img src="https://lh3.googleusercontent.com/p5B2MJG6V4VDG24TExsE_msqQ5q-vQ9WRRqUoJwRZdTe9Np7vXFKPte0YVpyoEw_dO1d077O69gs0G4ePUOlG0BNh5bI39ZfGW5N1PuXhMG-OzBVu-MZ7iruii5djY8vDBaUjv7q80SnOH6M_sE0de0V2peJm4LsHFxMYjL9KpPKSZh28cv6Be7TdF6W-3RpIc8buJJ_B9LXiId7VuZQx4V6zwoXIXgl_uV3P9DPMhxmni5VCgjoib6heMdDInRVZI09VQdpDpjr0ze6MxhX2RBVZN0g8RKqqi2oevHUhBatOTMEl0GplllGk3pzcqxQVZOHRuohTNDYGzAgjR1YNiy64iVB1OHx8T05dds7CYL4oHCwul8bhm3BF_u9LSwMdpmwoA1rcXNDrImJAGLJQN79SbtYpeOH_GcmYU1Fx1DFgkpKfyN4vSJyWtlZPoMZckyHOgymhDjLUJXYoFdezDLkCbLGqm8BEGAjGcHwpGDSfaurMnkyYsYny4JnX_-nn4bxiVByiYUhEt3Yhvanlcwfh9npzgcuKrhi2LxTV0pciaq4kDfxdk50xAKoTGgPVzV9FovZJCOdw1ZWDDvE3uOluPqwQ2RerbUbCg2AlLNcAFL4anJ3kBJaaDYm_QW4IDgCb3ZkX-3Gn4ZXEeLmCclVF9PAwimkvqKv7qFQHvtDDZ03A-xUdKI=w830-h625-no" alt="" /></p>
+
+<p>and later Attack-Defence CTF which i was paired with Professional it was good and learnt lot about nmap and shell scripting and team coordination.</p>
+
+<p><img src="https://lh3.googleusercontent.com/PPwibzuXG782uQm_Lt-Og2HBZuvYJICNhLgjqWqJL30pCWi-AuD0zMOV1lq9szvNfTGDrMeoehMIjXd8pXpp3WPfMJzNE_runSgJ499_W_UzFilypc1sZuu_NP4014ivi4sY18rMDDZbw2ZXO6S4QvJnUjY76quqJohjB33S2FNVz46C6W4OcSIfSRwL3w--Rv1KRafmQXgIoyD3cPoBLnvPMGlYSoLpUeQUzgfwubm8G1Af2DAFr8F9IeUvJr3B3MR29Gp2Kqv9H3AmUXsPKOA2U60OCegji5rpchQ1tg5umIFmIgK6IPmnE43PHOtRFjJkXk7aPgbL8TClJKvyRm5FL_yvErXLw5m-yax85s5FZzF2j14XXjxSjvHHeqy4leBlXjFLx7ZU0TS_wAzKpIrzPdmpfxbVPlfYCXVPCziEfFbq9SoIRibMuYid85ihUAat45DkqFDvPa6EFNRkrZgBcXi7fIKq4Fu-MZNw6zIVG6CAjFXBpr-VpvsiuZL0TTzJW71dhg3G1Hvk9Zf4MQrkgRPEu3SwCxRA0MaJOdFn3i7gp6ncR1EUqRcGZb-jX7_yLf6_NcJk_R281_SgWzBqFmFH084wSqIyIXhHO7R6Gkjg3kyTaEe9NVf_MeVz6gizP-In8acsbM8LuADX4a0ECGXQokGP4gYDdo55Eyon4YsU0EDxhsY=w435-h625-no" alt="" /></p>
+
+<h1 id="inctf-finals-day-3">InCTF Finals (day 3)</h1>
+
+<p>On 30 / 12, we were having our Jeopardy style CTF. It was a great event. But to excel in Jeopardy CTFs, one need a really good experience with cryptography, stego, binary analysis, reverse engeneering, mobile security</p>
+
+<p><img src="https://lh3.googleusercontent.com/VtRJvGyCVlQNMyfcF4jEGeF7xC1-L3lIHPWjVW7j_oCQBWAhR34L_TRuJ7-4RCvFJWqpJnfVQdjm5risgQWcRxPqXcQPQUBa_t61ng2_1jWvveI32TstIDmt1YzzQ-M8s5Bqt_uc4fo5YudooAXLT13vfAfqPyQ3oy2BkPW1RuQndMAWDfQFmHaJg7HpSc1bwXVm9gYu04PIlmSMYbhGrO8XQJY4VU67rjwUPzhmBHunTVGbkEXy5PhgCd3PzkccA3jf06DdoBMUYmFqNDdEBes9wB5pOf2-I7xbd4MxBr-4ajsbWVbvuBz-A9qegEpFQq9ih55JhLH3OnBVHLmkgHaG0eOU8D1bBnUkxlHNhIpWHazOBnLpVbFlRjMj4uvjG_liAQ4gGmTeotHvb0meH9ZdQ4OnGyLTIbLaxRBrrVLHzSYf4kySdCegICfkJaOc2IRwu68FmhiNwIhoyCn5m15Rg_Z07kiJZ2qmPO4eYo2WLsnpr6VOwNgOxz9ooKPF09QbTWkqrnmQaig64FYceEhQ7x7xtx2nw2DlSG4sbg3gSYE-KhBMwqdl6MUIUAsrlrGKVk2-aJFFdx2ODx-VwAxljMxAv1nOOiW2OcbjVtk1ft681ynCQlRYb1PjH6Hec9SV4T01VttcWnh61zB6SkUswzi6kd8LC-LBUp8_4BI52FMByLjxF7I=w1024-h576-no" alt="" /></p>
+
+      </div>
+
+      <footer>
+        
+
+
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "kryptocodes" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </footer>
+    </article>
+
+    
+  </section>
+
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+    
+    
+    
+    
+  </section>
+</footer>
+
+    </main>
+
+    
+
+  </body>
+
+</html>

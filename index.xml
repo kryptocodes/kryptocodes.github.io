@@ -6,10 +6,21 @@
     <description>Recent content on Srivatsan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 28 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 31 Dec 2019 19:01:20 +0530</lastBuildDate>
     
 	<atom:link href="https://kryptocodes.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Journey of my first CTF (InCTF 2019)</title>
+      <link>https://kryptocodes.github.io/posts/inctf/</link>
+      <pubDate>Tue, 31 Dec 2019 19:01:20 +0530</pubDate>
+      
+      <guid>https://kryptocodes.github.io/posts/inctf/</guid>
+      <description>Note : This blog post is all about my experience at InCTF 2019.It was organised by India’s #1 and World’s #20 CTF team as per ctftime.org ratings of 2019.
+I had a chance of attending my first jeopardy CTF competition on 28th December 2019. As an infosec conference first-timer I would like to share my experience.
+So CTF? WTF? CTF events, Capture the Flag, are online team-based or individual competitions in which eihter groups or individuals race against one another to solve a list of cybersecurity challenges (i.</description>
+    </item>
     
     <item>
       <title>Install Realtek WiFi driver for GNU/Linux</title>
