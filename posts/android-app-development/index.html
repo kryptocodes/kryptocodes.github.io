@@ -59,7 +59,7 @@
     <link rel="icon" type="image/png" href="https://kryptocodes.github.io/images/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://kryptocodes.github.io/images/favicon-16x16.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.59.0" />
+    <meta name="generator" content="Hugo 0.67.0" />
   </head>
 
   <body class=" inverted">
@@ -116,55 +116,36 @@
       </header>
 
       <div>
-        
-
-<p>WhatsApp Messenger, or simply WhatsApp is a freeware, cross-platform messaging and Voice over IP (VoIP) service owned by Facebook, Inc. It allows users to send text messages and voice messages, make voice and video calls, and share images, documents, user locations, and other media (spam) currently Whatsapp has 1.5 billion users in 180+ countries and i think everyone uses Whatsapp and so recently Whatsapp introduced a new feature called stickers(not new tho) and of course it&rsquo;s turn to be a another spamming feature to spam other DMs and groups.. so recently saw the spamming sticker app which is flooded in the playstore so i thought of writing about the app building</p>
-
-<p><img src="https://kryptocodes.github.io/images/waa.jpg" alt="wa" /></p>
-
+        <p>WhatsApp Messenger, or simply WhatsApp is a freeware, cross-platform messaging and Voice over IP (VoIP) service owned by Facebook, Inc. It allows users to send text messages and voice messages, make voice and video calls, and share images, documents, user locations, and other media (spam) currently Whatsapp has 1.5 billion users in 180+ countries and i think everyone uses Whatsapp and so recently Whatsapp introduced a new feature called stickers(not new tho) and of course it&rsquo;s turn to be a another spamming feature to spam other DMs and groups.. so recently saw the spamming sticker app which is flooded in the playstore so i thought of writing about the app building</p>
+<p><img src="https://kryptocodes.github.io/images/waa.jpg" alt="wa"></p>
 <p>and recently google had removed tons of the stickers app from the playstore well because of the spam of course</p>
-
-<p><img src="https://kryptocodes.github.io/images/wa1.PNG" alt="wa1" /></p>
-
+<p><img src="https://kryptocodes.github.io/images/wa1.PNG" alt="wa1"></p>
 <p>Okay then let&rsquo;s spam more</p>
-
 <p>Before jumping into actual content, let me introduce myself, I&rsquo;m a react developer, I react more for android and iOS and I&rsquo;m trying to rust to whack Java. Initially, when I heard about the android app development(Sticker app) same as the typical people I thought it would be difficult to create but when I started to see more and more sticker app in the market&hellip; wait wait if it is hard to create then why it is flooded in the App store? And it&rsquo;s turns out, it&rsquo;s not as difficult as you think.</p>
-
 <h1 id="prerequisite">Prerequisite</h1>
-
 <ol>
 <li>A Computer with working internet connection - ofcourse without that you can&rsquo;t build</li>
 <li>Android studio - welp you can use Expo or any other ide but here we are going to in a traditional path to build an android app</li>
 <li>Common sense and patience</li>
 <li>A learning spirit, there will be no spoonfeeding here</li>
 </ol>
-
 <h1 id="what-this-guide-will-cover">What this guide will cover:</h1>
-
 <ul>
 <li>Downloading the source</li>
 <li>Modifying the assets</li>
 <li>Building the Sticker App</li>
 </ul>
-
 <h1 id="what-this-guide-will-not-cover">What this guide will NOT cover:</h1>
-
 <ul>
 <li>How to Hack WiFi</li>
 <li>adding spyware</li>
 <li>app to prove earth is flat</li>
 </ul>
-
 <h1 id="first-step">First step</h1>
-
 <p>Download <a href="https://developer.android.com/studio">Android Studio</a> and git clone or download the whatsapp sticker app repository from the site <a href="https://github.com/WhatsApp/stickers.git">Whatsapp sticker app</a></p>
-
 <h1 id="second-step">Second step</h1>
-
 <p>Create sticker package (image)</p>
-
 <p>Hold up before creating sticker there is certain rules and limitation</p>
-
 <ul>
 <li>Stickers must be exactly 512 x 512 pixels</li>
 <li>A sticker is an image that has a transparent background</li>
@@ -177,94 +158,73 @@
 <li>This image should be 96 x 96 pixels</li>
 <li>Max file size of 50KB</li>
 </ul>
-
 <p>TL;DR just convert all stickers to 512x512 size and in webp format Welp again, it&rsquo;s easy to convert thanks to the open source community</p>
-
 <p>Now you have to fetch the assets i mean the stickers either you can use your own images or download images from the internet</p>
-
 <p>if you are using custom images then you have to remove the background
 To remove the background of the image use <a href="https://www.remove.bg/">remove_bg</a> and to resize and convert image to webp use <a href="https://image.online-convert.com/convert-to-webp">resize_img</a></p>
-
-<p>Now open android studio and open the repository which you have downloaded <code>Whatsapp_Stickers</code>
+<p>Now open android studio and open the repository which you have downloaded <code>Whatsapp_Stickers</code> 
 earlier from the github</p>
-
 <p>Now navigate to <code>Android/app/src/main/assets</code> in Android Studio and create a new folder(ex: 2 or 3) and added your stickers images(webp images) and 96x96 png image for sticker thumbnail so the sticker assets are ready now we need tweak configuration</p>
-
-<p><img src="https://kryptocodes.github.io/images/wa2.PNG" alt="wa2" /></p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-goto" data-lang="goto">Android/app/src/main/assets/content.json</code></pre></div>
-<p><img src="https://kryptocodes.github.io/images/wa4.PNG" alt="wa_4" /></p>
-
+<p><img src="https://kryptocodes.github.io/images/wa2.PNG" alt="wa2"></p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">Android/app/src/main/assets/content.json
+</code></pre></div><p><img src="https://kryptocodes.github.io/images/wa4.PNG" alt="wa_4"></p>
 <p>now modify the content.json and add your sticker assets info into it</p>
-
 <p>Modifying the contents.json file</p>
-
 <p>You must also modify the contents.json file in SampleStickerApp/app/src/main/assets. Replace the values of the metadata with your own. A few notes:</p>
-
 <ul>
 <li><code>name</code>: the sticker pack&rsquo;s name (128 characters max)</li>
-<li><code>identifier</code>: The identifier should be unique and can be alphanumeric: a-z, A-Z, 0-9, and the following characters are also allowed &ldquo;_&ldquo;, &ldquo;-&rdquo;, &ldquo;.&rdquo; and &ldquo; &ldquo;. The identifier should be less than 128 characters.</li>
+<li><code>identifier</code>: The identifier should be unique and can be alphanumeric: a-z, A-Z, 0-9, and the following characters are also allowed &ldquo;_&quot;, &ldquo;-&quot;, &ldquo;.&rdquo; and &quot; &ldquo;. The identifier should be less than 128 characters.</li>
 <li><code>publisher</code>: name of the publisher of the pack (128 characters max)
 Replace the &ldquo;image_file&rdquo; value with the file name of your sticker image. It must have both the file name and extension. The ordering of the files in the JSON will dictate the ordering of your stickers in your pack.</li>
 <li><code>image_data_version</code> : an overall representation of the version of the stickers and tray icon. When you update stickers or tray icon in your pack, please update this string, this will tell WhatsApp that the pack has new content and update the stickers on WhatsApp side.</li>
 <li><code>avoid_cache</code> : this tells WhatsApp that the stickers from your pack should not be cached. By default, you should keep it false. Exception is that if your app updates stickers without user actions, you can keep it true, for example: your app provides clock sticker that updates stickers every minute.</li>
-
-<li><p><code>android_play_store_link and ios_app_store_link (optional fields)</code>: here you can put the URL to your sticker app in the Google Play Store and Apple App Store (if you have an iOS version of your sticker app). If you provide these URLs, users who receive a sticker from your app in WhatsApp can tap on it to view your sticker app in the respective App Stores. On Android, the URL follows the format</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4">https://play.google.com/store/apps/details?id=com.example </pre></div>
-<p>where &ldquo;com.example&rdquo; is your app&rsquo;s package name.</p></li>
-
-<li><p><code>emojis (optional)</code>: add up to a maximum of three emoji for each sticker file. Select emoji that best describe or represent that sticker file. For example, if the sticker is portraying love, you may choose to add a heart emoji like 💕. If your sticker portrays pizza, you may want to add the pizza slice emoji 🍕. In the future, WhatsApp will support a search function for stickers and tagging your sticker files with emoji will enable that. The sticker picker/tray in WhatsApp today already categorizes stickers into emotion categories (love, happy, sad, and angry)and it does this based on the emoji you tag your stickers with.</p></li>
+<li><code>android_play_store_link and ios_app_store_link (optional fields)</code>: here you can put the URL to your sticker app in the Google Play Store and Apple App Store (if you have an iOS version of your sticker app). If you provide these URLs, users who receive a sticker from your app in WhatsApp can tap on it to view your sticker app in the respective App Stores. On Android, the URL follows the format</li>
 </ul>
-
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">https://play.google.com/store/apps/details?id=com.example 
+</code></pre></div><p>where &ldquo;com.example&rdquo; is your app&rsquo;s package name.</p>
+<ul>
+<li><code>emojis (optional)</code>: add up to a maximum of three emoji for each sticker file. Select emoji that best describe or represent that sticker file. For example, if the sticker is portraying love, you may choose to add a heart emoji like 💕. If your sticker portrays pizza, you may want to add the pizza slice emoji 🍕. In the future, WhatsApp will support a search function for stickers and tagging your sticker files with emoji will enable that. The sticker picker/tray in WhatsApp today already categorizes stickers into emotion categories (love, happy, sad, and angry)and it does this based on the emoji you tag your stickers with.</li>
+</ul>
 <p>Alright, if you don&rsquo;t much patience to look into tags then just copy paste the default code and edit the content accordingly</p>
-
-<p><img src="https://kryptocodes.github.io/images/wa5.png" alt="wa_5" /></p>
-
+<p><img src="https://kryptocodes.github.io/images/wa5.png" alt="wa_5"></p>
 <p>So stickers asset are done!!!</p>
-
 <h2 id="before-building-your-app-you-will-need-to-do-the-following">Before building your app, you will need to do the following:</h2>
-
 <h1 id="this-one-is-totally-optional">this one is totally optional</h1>
-
 <ul>
 <li>Make sure to change the app&rsquo;s icon (i.e. launcher icon) that will be displayed on the home screens of users who install your app. The icons are contained in SampleStickerApp/app/src/main/res in each of the folders beginning with mipmap (e.g. mipmap-xhdpi or mipmap-xxxhdpi). For a simple way to create these icons, you can use Android Image Asset Studio which is built into Android Studio. See <a href="https://developer.android.com/studio/write/image-asset-studio#access">link</a>for more information on how to run this tool and read the section here for information on how to use the tool to create your app&rsquo;s launcher icons.</li>
-
-<li><p>Change your apps name in</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4">strings.xml 
-SampleStickerApp/app/src/main/res/values/strings.xml</pre></div>
-<p>This is the name users will see for your app on their phone. You can consider providing translations of your app name by following this instruction: <a href="https://developer.android.com/guide/topics/resources/localization">link</a></p></li>
-
-<li><p>In addition, the application id (e.g. com.whatsapp) need to be changed. Note that you need to specify a unique application id that does not exist in play store. For more information on how to set your application ID, visit <a href="https://developer.android.com/studio/build/application-id">link</a>.</p></li>
-
-<li><p>Change the applicationId in build.gradle (SampleStickerApp/app/build.gradle)
-For developers that are familiar with package name, you can change the package name, but it is not required. The package name will not be visible once the app is built.</p></li>
+<li>Change your apps name in</li>
 </ul>
-
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">strings.xml 
+SampleStickerApp/app/src/main/res/values/strings.xml
+</code></pre></div><p>This is the name users will see for your app on their phone. You can consider providing translations of your app name by following this instruction: <a href="https://developer.android.com/guide/topics/resources/localization">link</a></p>
+<ul>
+<li>In addition, the application id (e.g. com.whatsapp) need to be changed. Note that you need to specify a unique application id that does not exist in play store. For more information on how to set your application ID, visit <a href="https://developer.android.com/studio/build/application-id">link</a>.</li>
+<li>Change the applicationId in build.gradle (SampleStickerApp/app/build.gradle)
+For developers that are familiar with package name, you can change the package name, but it is not required. The package name will not be visible once the app is built.</li>
+</ul>
 <p>TL;DR to change to app name navigate to</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4">SampleStickerApp/app/src/main/res/values/strings.xml</pre></div>
-<p>and change the values</p>
-
-<p><img src="https://kryptocodes.github.io/images/wa7.png" alt="wa7" /></p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-strings.xml" data-lang="strings.xml"><span style="font-weight:bold">&lt;string</span> <span style="color:#007f7f">name=</span><span style="color:#0ff;font-weight:bold">&#34;app_name&#34;</span><span style="font-weight:bold">&gt;</span>Insert_your_app_name<span style="font-weight:bold">&lt;/string&gt;</span></code></pre></div>
-<p>and don&rsquo;t forgot to refactor the app build</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4">java/com.example.stickerapp</pre></div>
-<p><img src="https://kryptocodes.github.io/images/wa6.png" alt="wa6" /></p>
-
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">SampleStickerApp/app/src/main/res/values/strings.xml
+</code></pre></div><p>and change the values</p>
+<p><img src="https://kryptocodes.github.io/images/wa7.png" alt="wa7"></p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-strings.xml" data-lang="strings.xml"><span style="font-weight:bold">&lt;string</span> <span style="color:#007f7f">name=</span><span style="color:#0ff;font-weight:bold">&#34;app_name&#34;</span><span style="font-weight:bold">&gt;</span>Insert_your_app_name<span style="font-weight:bold">&lt;/string&gt;</span>
+</code></pre></div><p>and don&rsquo;t forgot to refactor the app build</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">java/com.example.stickerapp
+</code></pre></div><p><img src="https://kryptocodes.github.io/images/wa6.png" alt="wa6"></p>
 <p>refactor -&gt; rename -&gt; your_app_name
-and change the app name in
-<code>
-Sticker/app/Gradle Scripts/build.gradle (Module: app)</code></p>
+and change the app name in</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">Sticker/app/Gradle Scripts/build.gradle (Module: app)```
 
-<p><img src="https://kryptocodes.github.io/images/wa8.PNG" alt="wa8" /></p>
+![wa8](/images/wa8.PNG)
 
-<p>And there we go, voila you are done now enter the run command or export the build TaDa
-if you face any problems feel free to ping me I have presence on multiple social media/messaging platforms and I will respond to DMs/mentions as long as you <a href="https://dontasktoask.com/">Don&rsquo;t ask to ask, just ask</a> and express your intent clearly.</p>
+And there we go, voila you are done now enter the run command or export the build TaDa
+if you face any problems feel free to ping me I have presence on multiple social media/messaging platforms and I will respond to DMs/mentions as long as you [Don&#39;t ask to ask, just ask](https://dontasktoask.com/) and express your intent clearly.
 
-<p><img src="https://kryptocodes.github.io/images/wa9.jpg" alt="wa9" /></p>
+![wa9](/images/wa9.jpg)
 
-<p>here the sample screenshot of the Sticker App which i made while writing this blog
-<img src="https://kryptocodes.github.io/images/wa10.jpg" alt="wa10" />
-P.S if you like android development, please please don’t spam with sticker app really, it’s cancerous to the whole android platform as I mentioned in the beginning the whole app market is flooded with sticker app.. Rather, try to learn other stack and explore more! HAPPY CODING</p>
 
+here the sample screenshot of the Sticker App which i made while writing this blog
+![wa10](/images/wa10.jpg)
+P.S if you like android development, please please don’t spam with sticker app really, it’s cancerous to the whole android platform as I mentioned in the beginning the whole app market is flooded with sticker app.. Rather, try to learn other stack and explore more! HAPPY CODING</code></pre></div>
       </div>
 
       <footer>

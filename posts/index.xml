@@ -6,10 +6,21 @@
     <description>Recent content in Posts on Srivatsan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 03 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://kryptocodes.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Introduction to Nmap</title>
+      <link>https://kryptocodes.github.io/posts/nmap/</link>
+      <pubDate>Tue, 17 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kryptocodes.github.io/posts/nmap/</guid>
+      <description>Note:Attacking systems you do not have permission to attack is illegal. Only perform attacks on machines and networks you own or have permission for.
+ Alright, before jumping into NMAP let me brief about the pen test or penetration test. Nmap is a one of the information gathering tools
+So WTF is Pentest A penetration test, colloquially known as a pen test,Penetration testing is a process used by companies to test the security of their software and infrastructure.</description>
+    </item>
     
     <item>
       <title>Opensource and Monetization</title>
@@ -18,7 +29,7 @@
       
       <guid>https://kryptocodes.github.io/posts/open_source_and_monetization/</guid>
       <description>You’ve heard it time and time again, people talking about a new project that involves what’s called “open source code”? Probably I think everyone knows what is open source right?
- In general, open source refers to any program whose source code is made available for use or modification as users or other developers see fit. Open source software is usually developed as a public collaboration and made freely available.</description>
+ In general, open source refers to any program whose source code is made available for use or modification as users or other developers see fit. Open source software is usually developed as a public collaboration and made freely available.Open source software programmers can actually charge money for the software that they create or help out with.</description>
     </item>
     
     <item>
