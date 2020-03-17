@@ -11,12 +11,12 @@
 
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Introduction to Nmap"/>
-<meta name="twitter:description" content="Note:Attacking systems you do not have permission to attack is illegal. Only perform attacks on machines and networks you own or have permission for.
+<meta name="twitter:description" content="Note:Attacking other&rsquo;s computer is illegal.This content is for educational purpose only.Perform attacks only on the machine or networks which you own or permission.
  Alright, before jumping into NMAP let me brief about the pen test or penetration test. Nmap is a one of the information gathering tools
 So WTF is Pentest A penetration test, colloquially known as a pen test,Penetration testing is a process used by companies to test the security of their software and infrastructure."/>
 
     <meta property="og:title" content="Introduction to Nmap" />
-<meta property="og:description" content="Note:Attacking systems you do not have permission to attack is illegal. Only perform attacks on machines and networks you own or have permission for.
+<meta property="og:description" content="Note:Attacking other&rsquo;s computer is illegal.This content is for educational purpose only.Perform attacks only on the machine or networks which you own or permission.
  Alright, before jumping into NMAP let me brief about the pen test or penetration test. Nmap is a one of the information gathering tools
 So WTF is Pentest A penetration test, colloquially known as a pen test,Penetration testing is a process used by companies to test the security of their software and infrastructure." />
 <meta property="og:type" content="article" />
@@ -121,7 +121,7 @@ So WTF is Pentest A penetration test, colloquially known as a pen test,Penetrati
 
       <div>
         <blockquote>
-<p><strong>Note</strong>:Attacking systems you do not have permission to attack is illegal. Only perform attacks on machines and networks you own or have permission for.</p>
+<p><strong>Note</strong>:Attacking other&rsquo;s computer is illegal.This content is for educational purpose only.Perform attacks only on the machine or networks which you own or permission.</p>
 </blockquote>
 <p>Alright, before jumping into NMAP let me brief about the pen test or penetration test. Nmap is a one of the  information gathering tools</p>
 <h1 id="so-wtf-is-pentest">So WTF is Pentest</h1>
@@ -174,7 +174,9 @@ So WTF is Pentest A penetration test, colloquially known as a pen test,Penetrati
 <p>Nmap uses CIDR notation,so you can just run something</p>
 <div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">nmap -sv --top-ports 1000 192.168.1.0/24
 </code></pre></div><h1 id="timing">Timing</h1>
-<p>Nmap has five timing options, officially named: paranoid,sneaky,polite,normal,agressive,insane,you can specify this with the T flag eg -T0 for paranoid and -T5 for insane. By the way the default Nmap runs on &ldquo;normal&rdquo; mode, so -T3 does nothing,</p>
+<p>Nmap has five timing options, officially named:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">paranoid,sneaky,polite,normal,agressive,insane
+</code></pre></div><p>you can specify this with the T flag eg -T0 for paranoid and -T5 for insane. By the way the default Nmap runs on &ldquo;normal&rdquo; mode, so -T3 does nothing,</p>
 <h1 id="file-output">File Output</h1>
 <p>If you want to save Nmap&rsquo;s results to a file for later, add the -oN filename flag -oX filename outputs results in XML format, which is useful if you&rsquo;ve got scripts that process Nmap output</p>
 <h1 id="scripts">Scripts</h1>
