@@ -132,28 +132,16 @@ So WTF is Pentest A penetration test, colloquially known as a pen test,Penetrati
 <h1 id="so-is-a-penetration-tester-just-a-hacker">So is a penetration tester just a hacker??</h1>
 <p>A major difference between a malicious hacker and pen tester is permission and reporting. Most companies provide a scope of areas where they would like the pen tester to focus. These could be specific domains, networks, systems etc. Pen testers also record any vulnerabilities found during their testing and can suggest solutions to patch the issue</p>
 <h1 id="pentest-methodology">Pentest methodology</h1>
-<ul>
-<li>
 <p><code>Scanning and Reconnaissance</code> — Getting to know the target using passive methods like researching publicly available information and network scanning.</p>
-</li>
-<li>
 <p><code>Threat Modeling</code> — A description or model of all the security concerns and why they should be resolved.</p>
-</li>
-<li>
 <p><code>Vulnerability Analysis</code> — Identifying vulnerabilities and determining their severity.</p>
-</li>
-<li>
 <p><code>Exploitation</code> — Gaining access by breaching security of a system or finding an bug to exploit in the software.</p>
-</li>
-<li>
 <p><code>Post-Exploitation Reporting</code> — Detailing the vulnerabilities found and providing information on potential impact on the company if exploited.</p>
-</li>
-</ul>
 <h1 id="nmap">Nmap</h1>
-<p>Nmap is a free open source tool for running scans on networks and discovering potential vulnerbilities.Using nmap network architectures and open ports are easier to locate.If you&rsquo;re a pentester,Nmap is a crucial part of your reconnaissance for understanding the landscape of what you&rsquo;re working with.If you have watched Matrix reloaded, then probably you would see this scene<br>
+<p>Nmap is a free open source tool for running scans on networks and discovering potential vulnerbilities.Using nmap network architectures and open ports are easier to locate.If you&rsquo;re a pentester,Nmap is a crucial part of your reconnaissance for understanding the landscape of what you&rsquo;re working with.
 <img src="https://kryptocodes.github.io/images/matrix.gif" alt="matrix"></p>
-<p>where Carrie-Anne Moss uses nmap to port scan the matrix and performs an attack against a SSH Unix server to get root access (SSH1 CRC32 COMPENSATION ATTACK)</p>
-<h1 id="installing-nmap">Installing NMAP</h1>
+<p>Clip from Matrix reloaded where Carrie-Anne Moss uses nmap to port scan the matrix and performs an attack against a SSH Unix server to get root access (SSH1 CRC32 COMPENSATION ATTACK)</p>
+<h1 id="installing-nmap">Installing Nmap</h1>
 <p>Nmap is pretty easy to install on Windows and MacOS - check out the official <a href="https://nmap.org/download.html">download page</a>. I recommend using Zenmap, the GUI that comes with the Windows and MacOS download. If you&rsquo;re on linux you can simply run <code>sudo apt-get install nmap</code></p>
 <h1 id="scanning-for-ports-with-nmap">Scanning for Ports With Nmap</h1>
 <p>Nmap is a powerfully versatile tool with many options. So many that the people behind Nmap managed to write a 468-page long book on it.</p>
@@ -186,7 +174,7 @@ So WTF is Pentest A penetration test, colloquially known as a pen test,Penetrati
 <p>Nmap uses CIDR notation,so you can just run something</p>
 <div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">nmap -sv --top-ports 1000 192.168.1.0/24
 </code></pre></div><h1 id="timing">Timing</h1>
-<p>Nmap has five timing options, officially named: paranoid,sneaky,polite,normal,agressive,insane, you can specify this with the T flag eg -T0 for paranoid and -T5 for insane. By the way the default Nmap runs on &ldquo;normal&rdquo; mode, so -T3 does nothing,</p>
+<p>Nmap has five timing options, officially named: paranoid,sneaky,polite,normal,agressive,insane,you can specify this with the T flag eg -T0 for paranoid and -T5 for insane. By the way the default Nmap runs on &ldquo;normal&rdquo; mode, so -T3 does nothing,</p>
 <h1 id="file-output">File Output</h1>
 <p>If you want to save Nmap&rsquo;s results to a file for later, add the -oN filename flag -oX filename outputs results in XML format, which is useful if you&rsquo;ve got scripts that process Nmap output</p>
 <h1 id="scripts">Scripts</h1>
@@ -200,7 +188,8 @@ manage to log in through SSH,well&hellip; that&rsquo;s a bad sign for the server
 <p>First off,check the version of SSH that&rsquo;s running (well you can do with -sV flag).Google that version and chuck in the keyword &ldquo;exploit&rdquo;.If it&rsquo;s an older version of SSH, you have good chances of finding publicly available exploits that you can just copy and run.</p>
 <p>If that doesn&rsquo;t work, you still have a chance of getting a login. Go back to your terminal and run something like this:</p>
 <p><code>ssh remote_username@remote_host</code></p>
-<p>“remote_username” can be any number of things, but the common names I’d check for are admin and root. Try some common passwords, and also try some company-specific things (does the network admin have a dog? kids? try their names). You can also try to run a bruteforce scan, but that’s out of the scope of this post.</p>
+<p>“remote_username” can be any number of things, but the common names I’d check for are admin and root.
+Try some common passwords, and also try some company-specific things (does the network admin have a dog? kids? try their names). You can also try to run a bruteforce scan, but that’s out of the scope of this post.</p>
 <h1 id="everything-else">Everything Else</h1>
 <p>SSH is a special case because of the severity of compromise possible if you get a login, but other services can be equally vulnerable.</p>
 <p>Once you’ve run an Nmap scan with version detection enabled, see if anything other than just port 80 and 443 shows up. Google the name of any services you find and figure out what they do, and if any exploits are publicly available. You know how developers joke about ripping all their work off StackOverflow? Pentesters pretty much do the same but with CVE (Common Vulnerabilities and Exposures) databases.</p>
