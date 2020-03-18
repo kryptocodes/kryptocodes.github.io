@@ -10,12 +10,12 @@
     <meta name="keywords" content="blog,developer,personal">
 
     <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Introduction to Nmap"/>
+<meta name="twitter:title" content="Penetration Testing with Nmap: A Beginner&#39;s Guide"/>
 <meta name="twitter:description" content="Note:Attacking other&rsquo;s computer is illegal.This content is for educational purpose only.Perform attacks only on the machine or networks which you own or permission.
  Alright, before jumping into NMAP let me brief about the pen test or penetration test. Nmap is a one of the information gathering tools
 So WTF is Pentest A penetration test, colloquially known as a pen test,Penetration testing is a process used by companies to test the security of their software and infrastructure."/>
 
-    <meta property="og:title" content="Introduction to Nmap" />
+    <meta property="og:title" content="Penetration Testing with Nmap: A Beginner&#39;s Guide" />
 <meta property="og:description" content="Note:Attacking other&rsquo;s computer is illegal.This content is for educational purpose only.Perform attacks only on the machine or networks which you own or permission.
  Alright, before jumping into NMAP let me brief about the pen test or penetration test. Nmap is a one of the information gathering tools
 So WTF is Pentest A penetration test, colloquially known as a pen test,Penetration testing is a process used by companies to test the security of their software and infrastructure." />
@@ -29,7 +29,7 @@ So WTF is Pentest A penetration test, colloquially known as a pen test,Penetrati
       <base href="https://kryptocodes.github.io/posts/nmap/">
     
     <title>
-  Introduction to Nmap · Srivatsan
+  Penetration Testing with Nmap: A Beginner&#39;s Guide · Srivatsan
 </title>
 
     
@@ -99,7 +99,7 @@ So WTF is Pentest A penetration test, colloquially known as a pen test,Penetrati
     <article>
       <header>
         <div class="post-title">
-          <h1 class="title">Introduction to Nmap</h1>
+          <h1 class="title">Penetration Testing with Nmap: A Beginner&#39;s Guide</h1>
         </div>
         <div class="post-meta">
           <div class="date">
@@ -111,7 +111,7 @@ So WTF is Pentest A penetration test, colloquially known as a pen test,Penetrati
             </span>
             <span class="reading-time">
               <i class="fas fa-clock"></i>
-              7 minutes read
+              8 minutes read
             </span>
           </div>
           
@@ -130,15 +130,19 @@ So WTF is Pentest A penetration test, colloquially known as a pen test,Penetrati
 <p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSOC57xpon4LyoRvSZpT6bkWU7jaEVsAuNk-sqWptOC78-4TezH" alt="pentest1"></p>
 <p><em>LoL</em></p>
 <h1 id="so-is-a-penetration-tester-just-a-hacker">So is a penetration tester just a hacker??</h1>
+<p><img src="https://content.spiceworksstatic.com/service.community/p/post_images/0000287256/5a3cda82/attached_image/a5e7b392129104c982149a73f7d33480.jpg" alt="hackercat"></p>
 <p>A major difference between a malicious hacker and pen tester is permission and reporting. Most companies provide a scope of areas where they would like the pen tester to focus. These could be specific domains, networks, systems etc. Pen testers also record any vulnerabilities found during their testing and can suggest solutions to patch the issue</p>
 <h1 id="pentest-methodology">Pentest methodology</h1>
 <p><code>Scanning and Reconnaissance</code> — Getting to know the target using passive methods like researching publicly available information and network scanning.</p>
+<p>Unlike the movies hackers don’t just start typing and automatically get access to a system. Scanning and reconnaissance is a key part of an attack in that it can detail vulnerable areas of a system. The first step of information gathering can be as simple as a quick google search.</p>
+<p>One way to think about information gathering is like breaking into a house. There’s no need to break down the door to get inside when there is a window open. In information gathering we want to find if the company we are testing has left any doors unlocked or maybe a window open.</p>
 <p><code>Threat Modeling</code> — A description or model of all the security concerns and why they should be resolved.</p>
 <p><code>Vulnerability Analysis</code> — Identifying vulnerabilities and determining their severity.</p>
-<p><code>Exploitation</code> — Gaining access by breaching security of a system or finding an bug to exploit in the software.</p>
+<p><code>Exploitation</code> — Gaining access by breaching security of a system or finding a bug to exploit in the software.</p>
 <p><code>Post-Exploitation Reporting</code> — Detailing the vulnerabilities found and providing information on potential impact on the company if exploited.</p>
 <h1 id="nmap">Nmap</h1>
-<p>Nmap is a free open source tool for running scans on networks and discovering potential vulnerbilities.Using nmap network architectures and open ports are easier to locate.If you&rsquo;re a pentester,Nmap is a crucial part of your reconnaissance for understanding the landscape of what you&rsquo;re working with.
+<p>Nmap is a free open source tool for running scans on networks and discovering potential vulnerbilities.Using nmap network architectures and open ports are easier to locate.If you&rsquo;re a pentester,Nmap is a crucial part of your reconnaissance for understanding the landscape of what you&rsquo;re working with.</p>
+<p>For reasons unknown, Hollywood has decided that Nmap is the tool to show whenever hacking scenes are needed. At least it is a lot more realistic than silly 3D animation approach used in many previous movies (e.g. &ldquo;hacking the Gibson&rdquo; on Hackers, or the much worse portrayals on Swordfish). We always like to see Nmap in the movies.While Nmap had been used in some previous obscure movies, it was The Matrix Reloaded which really turned Nmap into a movie star!
 <img src="https://kryptocodes.github.io/images/matrix.gif" alt="matrix"></p>
 <p>Clip from Matrix reloaded where Carrie-Anne Moss uses nmap to port scan the matrix and performs an attack against a SSH Unix server to get root access (SSH1 CRC32 COMPENSATION ATTACK)</p>
 <h1 id="installing-nmap">Installing Nmap</h1>
@@ -169,6 +173,7 @@ So WTF is Pentest A penetration test, colloquially known as a pen test,Penetrati
 <p>Here, we’re doing a sneaky scan (sS), version detection (sV), operating system detection (O), verbose output (v), and scanning the top 1000 ports.</p>
 <p>Now you know the basics of port scanning with Nmap!</p>
 <h1 id="going-further">Going Further</h1>
+<p><img src="https://www.4armed.com/uploads/2018/12/butwaittheresmore.png" alt="nmap6"></p>
 <h1 id="scanning-ip-ranges">Scanning IP Ranges</h1>
 <p>Scanning IP ranges instead of a single host is useful if you&rsquo;re testing on your own servers. I don&rsquo;t recommend doing this on servers you don&rsquo;t own,since you might miss and scan someone who&rsquo;s not your target</p>
 <p>Nmap uses CIDR notation,so you can just run something</p>
@@ -180,8 +185,9 @@ So WTF is Pentest A penetration test, colloquially known as a pen test,Penetrati
 <h1 id="file-output">File Output</h1>
 <p>If you want to save Nmap&rsquo;s results to a file for later, add the -oN filename flag -oX filename outputs results in XML format, which is useful if you&rsquo;ve got scripts that process Nmap output</p>
 <h1 id="scripts">Scripts</h1>
-<p>Nmap comes with some scripts you can enable ah i prefer other tool than scripts but you can google about those guide</p>
-<h2 id="the-fun-part-exploitation">The fun part: Exploitation</h2>
+<p>Nmap comes with some scripts you can enable but ah I prefer other tool than scripts but you can google about those guide</p>
+<h2 id="the-fun-part-exploitation">The Fun Part: Exploitation</h2>
+<p><img src="https://memecrunch.com/meme/TCL3/exploitation/image.jpg" alt="exploitation"></p>
 <p>Now that we know what&rsquo;s running on a host,we want to exploit it</p>
 <p>Attacking network is an entire topic of it&rsquo;s own but i&rsquo;ll cover some of the basic here</p>
 <h1 id="port-22-ssh">Port 22: SSH</h1>
@@ -196,6 +202,9 @@ Try some common passwords, and also try some company-specific things (does the n
 <p>SSH is a special case because of the severity of compromise possible if you get a login, but other services can be equally vulnerable.</p>
 <p>Once you’ve run an Nmap scan with version detection enabled, see if anything other than just port 80 and 443 shows up. Google the name of any services you find and figure out what they do, and if any exploits are publicly available. You know how developers joke about ripping all their work off StackOverflow? Pentesters pretty much do the same but with CVE (Common Vulnerabilities and Exposures) databases.</p>
 <p>Once you’ve run out of services to Google public exploits for, you can double back and check if any of the services have login portals. For example, if the service is webmail, you can try logging in to it with netcat by trying out default usernames and passwords for that service.</p>
+<p>And that&rsquo;s for this blog, hope I&rsquo;ll write more about pen-test in upcoming days and if you&rsquo;ve performed above commands well you&rsquo;re a hacker now LoL</p>
+<p><img src="https://i.imgflip.com/2cjjnb.jpg" alt="hackerman"></p>
+<p>P.S: Hacking is a skill to learn. You will not become a good pentester by just doing a few online courses. You will not become a good pentester by just installing Kali Linux. This is a challenging path, wrought with endless frustrations, and you will not learn how to travel it well within a day - a month - or even a year. However, if you’re determined, you’ll find pentesting to be an incredibly rewarding field and you might never want to leave.</p>
 <p>HAPPY HACKING</p>
 
       </div>
