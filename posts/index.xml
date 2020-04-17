@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Srivatsan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 17 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 16 Apr 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://kryptocodes.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Isn’t Crashing the Internet… Yet?</title>
+      <link>https://kryptocodes.github.io/posts/internet-surge/</link>
+      <pubDate>Thu, 16 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kryptocodes.github.io/posts/internet-surge/</guid>
+      <description>hope you all are doing well, I don’t need to tell you how disruptive the coronavirus is and huge swaths of the population are now forced to work from home. Over 90% people have been subject to stay in place quarantines.Everybody knew the importance of the Internet but nobody thought that someday it will play the role of a ray of hope. In the face of COVID- 19, the IT sector is experiencing a boom due to the increased demand for communication services all around the world.</description>
+    </item>
     
     <item>
       <title>Penetration Testing with Nmap: A Beginner&#39;s Guide</title>
@@ -29,7 +38,7 @@ So WTF is Pentest A penetration test, colloquially known as a pen test,Penetrati
       
       <guid>https://kryptocodes.github.io/posts/open_source_and_monetization/</guid>
       <description>You’ve heard it time and time again, people talking about a new project that involves what’s called “open source code”? Probably I think everyone knows what is open source right?
- In general, open source refers to any program whose source code is made available for use or modification as users or other developers see fit. Open source software is usually developed as a public collaboration and made freely available.Open source software programmers can actually charge money for the software that they create or help out with.</description>
+ In general, open source refers to any program whose source code is made available for use or modification as users or other developers see fit. Open source software is usually developed as a public collaboration and made freely available.</description>
     </item>
     
     <item>

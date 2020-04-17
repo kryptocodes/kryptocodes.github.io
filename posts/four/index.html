@@ -61,7 +61,7 @@ The hardware is Realtek device d723. This new WiFi hardware is being shipped in 
     <link rel="icon" type="image/png" href="https://kryptocodes.github.io/images/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://kryptocodes.github.io/images/favicon-16x16.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.67.0" />
+    <meta name="generator" content="Hugo 0.59.0" />
   </head>
 
   <body class=" inverted">
@@ -118,34 +118,48 @@ The hardware is Realtek device d723. This new WiFi hardware is being shipped in 
       </header>
 
       <div>
-        <h2 id="table-of-contents">Table of Contents</h2>
+        
+
+<h2 id="table-of-contents">Table of Contents</h2>
+
 <ul>
 <li>Getting Internet</li>
 <li>Finding Device</li>
 <li>Prerequisite</li>
 </ul>
-<p><img src="http://www.quickmeme.com/img/1c/1c5e24d60fd606d270d22d125ae256b38c8d59c4b9aa45cb428ae3079e0ed024.jpg" alt=""></p>
+
+<p><img src="http://www.quickmeme.com/img/1c/1c5e24d60fd606d270d22d125ae256b38c8d59c4b9aa45cb428ae3079e0ed024.jpg" alt="" /></p>
+
 <p>I&rsquo;ve been doing a lot of Linux installations lately and one very annoying thing that I found in 2 laptops was the non availability of WiFi driver. Apparently, it&rsquo;s a new hardware and is not in the Linux kernel.</p>
+
 <p>The hardware is <code>Realtek device d723</code>. This new WiFi hardware is being shipped in new PCs and laptops now. Without having the internet, one can&rsquo;t do almost anything. So it&rsquo;s important to have this fixed up.</p>
+
 <h1 id="getting-internet">Getting Internet</h1>
+
 <p>We need a temporary internet connection to fix WiFi. Ways to connect :</p>
+
 <ul>
 <li>Connect USB cable and use USB Tethering in your phone to connect your computer to the internet (through phone&rsquo;s cellular data/WiFi)</li>
 <li>Use wired ethernet cable for connecting to internet</li>
 </ul>
+
 <h1 id="finding-device">Finding device</h1>
-<p>Open a terminal and do the command <code> lspci</code>. you will see all the PCI devices of your system.</p>
+
+<p>Open a terminal and do the command <code>lspci</code>. you will see all the PCI devices of your system.</p>
+
 <h1 id="prerequisite">Prerequisite</h1>
+
 <p>You should install the corresponding header of your kernel:</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt-get install linux-headers-<span style="color:#0ff;font-weight:bold">&#34;username&#34;</span> -r
-</code></pre></div><p>Next,install the packages necessary for building:</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt-get install git build-essential dkms
-</code></pre></div><h1 id="fix">Fix</h1>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt-get install linux-headers-<span style="color:#0ff;font-weight:bold">&#34;username&#34;</span> -r</code></pre></div>
+<p>Next,install the packages necessary for building:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt-get install git build-essential dkms</code></pre></div>
+<h1 id="fix">Fix</h1>
+
 <p>We&rsquo;re gonna use the driver available in this Github repository&rsquo; <a href="https://github.com/lwfinger/rtlwifi_new/tree/extended">extended branch</a></p>
 <div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git clone -b extended --single-branch https://github.com/lwfinger/rtlwifi_new.git
 sudo dkms add rtlwifi_new
-sudo dkms install rtlwifi-new/0.6
-</code></pre></div><p><em><strong>Restart</strong></em> your comuter voila you&rsquo;ll get your WiFi !</p>
+sudo dkms install rtlwifi-new/0.6</code></pre></div>
+<p><strong><em>Restart</em></strong> your comuter voila you&rsquo;ll get your WiFi !</p>
 
       </div>
 
