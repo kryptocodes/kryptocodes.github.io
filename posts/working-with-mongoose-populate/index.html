@@ -155,8 +155,8 @@ The schema describes the attributes of the properties (aka fields) the applicati
 
 <p>Model.populate(), a Mongoose method that you can use to essentially link documents across collections. This allows you to have a schema for each of them, and generally keep things all nice and tidy.</p>
 
-<p>let&rsquo;s consider a example pokedox that sounds familiar right</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Javascript" data-lang="Javascript">pokedox.findOne({ id: <span style="color:#ff0;font-weight:bold">6</span> })
+<p>let&rsquo;s consider a example pokedex that sounds familiar right</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Javascript" data-lang="Javascript">pokedex.findOne({ id: <span style="color:#ff0;font-weight:bold">6</span> })
 </code></pre></div>
 <p>will return a pokemon of that id</p>
 <div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Javascript" data-lang="Javascript"> {
@@ -176,7 +176,7 @@ The schema describes the attributes of the properties (aka fields) the applicati
 <p>In some case, those kind of request would be enough, because we don&rsquo;t care about the weakness or the type so,having some ID won&rsquo;t bother us much.</p>
 
 <p>But in the case where i need that base like HP and Attack, i&rsquo;ll need to make another request to find it in database. Except, that here in mongoose we have a clever function called populate() that we can chained to our previous request in order to directly get that information in our answer without explictly doing an additional request.</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Javascript" data-lang="Javascript">pokedox.findOne({ id: <span style="color:#ff0;font-weight:bold">6</span> }).populate(<span style="color:#0ff;font-weight:bold">&#39;pokemon&#39;</span>)
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Javascript" data-lang="Javascript">pokedex.findOne({ id: <span style="color:#ff0;font-weight:bold">6</span> }).populate(<span style="color:#0ff;font-weight:bold">&#39;pokemon&#39;</span>)
 </code></pre></div><div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Javascript" data-lang="Javascript">{
     <span style="color:#0ff;font-weight:bold">&#34;id&#34;</span>: <span style="color:#ff0;font-weight:bold">6</span>,
     <span style="color:#0ff;font-weight:bold">&#34;pokemon&#34;</span>: {
@@ -206,7 +206,7 @@ The schema describes the attributes of the properties (aka fields) the applicati
 <p><img src="https://kryptocodes.github.io/images/mongo/charmander_candy.jpg" alt="charmander_candy" /></p>
 
 <p>But maybe, that&rsquo;s too much information, and we don&rsquo;t need unnecessary data like candy or egg.Only the Pokemon&rsquo;s HP and Attack are enough. Populate can then take another argument containing the field that we need</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Javascript" data-lang="Javascript">pokedox.findOne({ id: <span style="color:#ff0;font-weight:bold">6</span> }).populate(<span style="color:#0ff;font-weight:bold">&#39;pokemon&#39;</span>, <span style="color:#0ff;font-weight:bold">&#39;Name HP Attack Defense&#39;</span>)
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Javascript" data-lang="Javascript">pokedex.findOne({ id: <span style="color:#ff0;font-weight:bold">6</span> }).populate(<span style="color:#0ff;font-weight:bold">&#39;pokemon&#39;</span>, <span style="color:#0ff;font-weight:bold">&#39;Name HP Attack Defense&#39;</span>)
 </code></pre></div>
 <p><code>Result</code></p>
 <div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Javascript" data-lang="Javascript">{
