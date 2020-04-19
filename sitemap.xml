@@ -3,17 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://kryptocodes.github.io/posts/internet-surge/</loc>
-    <lastmod>2020-04-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://kryptocodes.github.io/posts/</loc>
-    <lastmod>2020-04-16T00:00:00+00:00</lastmod>
+    <lastmod>2020-04-18T19:57:28+05:30</lastmod>
   </url>
   
   <url>
     <loc>https://kryptocodes.github.io/</loc>
+    <lastmod>2020-04-18T19:57:28+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kryptocodes.github.io/posts/working-with-mongoose-populate/</loc>
+    <lastmod>2020-04-18T19:57:28+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://kryptocodes.github.io/posts/internet-surge/</loc>
     <lastmod>2020-04-16T00:00:00+00:00</lastmod>
   </url>
   
