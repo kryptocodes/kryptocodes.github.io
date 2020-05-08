@@ -6,10 +6,23 @@
     <description>Recent content on Srivatsan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 18 Apr 2020 19:57:28 +0530</lastBuildDate>
+    <lastBuildDate>Fri, 08 May 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://kryptocodes.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>What&#39;s the big deal with privacy?</title>
+      <link>https://kryptocodes.github.io/posts/whats-the-big-deal-with-privacy/</link>
+      <pubDate>Fri, 08 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kryptocodes.github.io/posts/whats-the-big-deal-with-privacy/</guid>
+      <description>Firstly, laugh, laugh wholeheartedly, WHY? because it’s a joke.
+So What is Privacy in the first place?  /ˈprɪvəsi,ˈprʌɪvəsi/
+a state in which one is not observed or disturbed by other people.
+ In simple terms privacy is about being on your own, with your thoughts, feelings, and experiences
+I have nothing to hide is not a valid argument. Then why does your Phone/PC have a passcode? Why do you lock your apps(especially chat apps and gallery)?</description>
+    </item>
     
     <item>
       <title>Working with Mongoose populate</title>
