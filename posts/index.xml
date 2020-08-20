@@ -44,17 +44,6 @@ What is Mongoose ? Mongoose is a elegant MongoDB object modeling for node.js.It 
     </item>
     
     <item>
-      <title>Penetration Testing with Nmap: A Beginner&#39;s Guide</title>
-      <link>https://kryptocodes.github.io/posts/nmap/</link>
-      <pubDate>Tue, 17 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://kryptocodes.github.io/posts/nmap/</guid>
-      <description>Note:Attacking other&amp;rsquo;s computer is illegal.This content is for educational purpose only.Perform attacks only on the machine or networks which you own or permission.
- Alright, before jumping into Nmap let me brief about the pen test or penetration test. Nmap is a one of the information gathering tools
-So WTF is Pentest A penetration test, colloquially known as a pen test,Penetration testing is a process used by companies to test the security of their software and infrastructure.</description>
-    </item>
-    
-    <item>
       <title>Opensource and Monetization</title>
       <link>https://kryptocodes.github.io/posts/open_source_and_monetization/</link>
       <pubDate>Tue, 03 Mar 2020 00:00:00 +0000</pubDate>
