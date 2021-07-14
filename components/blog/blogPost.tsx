@@ -30,7 +30,7 @@ const BlogPostIndex = ({posts}) => {
 
   return (
     <>
-      <div className="container lg:px-28 my-8 dark:text-white">
+      <div className="container px-6 lg:px-28 my-8 dark:text-white">
         <h1 className="text-2xl px-2 text-bold">Blogs</h1>
         {posts.map((v) => 
         <>

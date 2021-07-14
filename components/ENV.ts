@@ -1,0 +1,1 @@
+export const NOTION_BLOG_ID = process.env.NEXT_PUBLIC_BLOG

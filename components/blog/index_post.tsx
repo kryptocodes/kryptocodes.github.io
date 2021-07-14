@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from "next/link";
+import { NOTION_BLOG_ID } from '../ENV';
 
-export const NOTION_BLOG_ID = 'e92fcd11a75f4e9da334e22e291cbc02'
 
 const index = ({posts}) => {
       return (

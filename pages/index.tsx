@@ -1,11 +1,12 @@
 import React from 'react'
+import { NOTION_BLOG_ID } from '../components/ENV';
 import HeroIndex from '../components/hero';
 import BlogPost from '../components/hero/blogPost';
 import NavBar from '../components/nav';
 
-export const NOTION_BLOG_ID = 'e92fcd11a75f4e9da334e22e291cbc02'
 
-console.log(process.env.NEXT_PUBLIC_BLOG)
+
+
 
 interface indexProps {
 
@@ -16,9 +17,10 @@ const index: React.FC<indexProps> = ({posts}) => {
     return (
       <>
         <NavBar/>
+        <div className="px-4">
         <HeroIndex/>
         <BlogPost posts={posts}/>
-      
+        </div>
       </>
     );
 }

@@ -4,9 +4,11 @@ import UseDarkMode from "../util/darkMode";
 import { motion, useCycle } from "framer-motion";
 
 import Link from 'next/link'
-interface indexProps {}
+import Header from "../Head/head";
 
-const NavBar = ({}) => {
+
+
+const NavBar:React.FC<any> = ({title,description}) => {
   const [colorTheme,setTheme] = UseDarkMode()
   const [menu,setMenu] = useState(false)
 
@@ -35,7 +37,7 @@ const NavBar = ({}) => {
   ]
   const Component = () => (
     <>
-    
+      <Header title={title} description={description} />
       <div className="flex justify-between pt-5 pb-5 px-8 items-center rounded-lg shadow-lg dark:bg-transparent bg-white">
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <Link href="/">
@@ -108,7 +110,7 @@ const NavBar = ({}) => {
         </div> : "" }</motion.nav>
     </>
   );
-  return <Component />;
+  return  <Component />;
 };
 
 export default NavBar;

@@ -2,6 +2,7 @@ import { NotionRenderer } from "react-notion";
 
 import { getAllPosts } from '../../components/blog/index_post'
 import NavBar from "../../components/nav";
+import { DateFormat } from "../../components/util/DateFormat";
 
 
 export async function getStaticProps({ params: { id } }) {
@@ -33,8 +34,9 @@ const PageParser = ({ post, blocks }) => {
   return(
   <>
   <NavBar/>
-  <div className="container mx-auto dark:text-white px-8 justify-content-center" style={{ maxWidth: 768 }}>
-    <h1 className="text-4xl text-center pb-5 pt-10">{post.Name}</h1>
+  <div className="container mx-auto dark:text-white px-8 pb-8 justify-content-center" style={{ maxWidth: 768 }}>
+    <h1 className="text-4xl text-center text-justify pb-2 pt-10">{post.Name}</h1>
+    <p className="text-gray-400 pb-8">{DateFormat(post.Date)}</p>
     <NotionRenderer blockMap={blocks} />
   
   </div>

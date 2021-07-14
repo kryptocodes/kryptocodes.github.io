@@ -1,6 +1,6 @@
 import React from 'react'
-import { NOTION_BLOG_ID } from '.';
 import BlogPostIndex from '../components/blog/blogPost';
+import { NOTION_BLOG_ID } from '../components/ENV';
 import NavBar from '../components/nav';
 
 interface aboutProps {
@@ -8,7 +8,6 @@ interface aboutProps {
 }
 
 const Blog: React.FC<aboutProps> = ({posts}) => {
-  console.log(posts)
         return (
             <>
                 <NavBar/>
