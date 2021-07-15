@@ -35,7 +35,7 @@ const PageParser = ({ post, blocks }) => {
   <>
   <NavBar/>
   <div className="container mx-auto dark:text-white px-8 pb-8 justify-content-center" style={{ maxWidth: 768 }}>
-    <h1 className="text-4xl text-center text-justify pb-2 pt-10">{post.Name}</h1>
+    <h1 className="text-4xl text-left pb-2 pt-10">{post.Name}</h1>
     <p className="text-gray-400 pb-8">{DateFormat(post.Date)}</p>
     <NotionRenderer blockMap={blocks} />
   

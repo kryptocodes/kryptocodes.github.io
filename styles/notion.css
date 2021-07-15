@@ -513,7 +513,7 @@
   .notion-table,
   .notion-th,
   .notion-td {
-    border: 1px solid rgba(55, 53, 47, 0.09);
+    border: 1px solid;
     border-collapse: collapse;
   }
   
@@ -540,7 +540,6 @@
   }
   
   .notion-th {
-    color: rgba(55, 53, 47, 0.6);
     font-size: 14px;
   }
   

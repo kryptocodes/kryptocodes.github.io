@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import UseDarkMode from "../util/darkMode";
 
-import { motion, useCycle } from "framer-motion";
 
 import Link from 'next/link'
 import Header from "../Head/head";
@@ -11,16 +10,6 @@ import Header from "../Head/head";
 const NavBar:React.FC<any> = ({title,description}) => {
   const [colorTheme,setTheme] = UseDarkMode()
   const [menu,setMenu] = useState(false)
-
-  const variants = {
-    open: {
-      transition: { staggerChildren: 0.07, delayChildren: 0.2 }
-    },
-    closed: {
-      transition: { staggerChildren: 0.05, staggerDirection: -1 }
-    }
-  };
-  
   const Menu = [
     {
       name:"About",
@@ -60,7 +49,7 @@ const NavBar:React.FC<any> = ({title,description}) => {
 
              
 
-              <button className="dark:text-white" onClick={() => setTheme(colorTheme)}>
+              <button className="dark:text-white" onClick={() => setTheme(colorTheme) }>
                   {colorTheme === 'dark' ? 
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
@@ -86,13 +75,6 @@ const NavBar:React.FC<any> = ({title,description}) => {
   </div>
         
         </div>
-
-        <motion.nav
-      initial={false}
-      animate={menu ? "open" : "closed"}
-      custom={1000}
-    >
-        <motion.div className="background" variants={variants} />     
         {menu ? <div className="md:hidden w-full  bg-white dark:bg-gray-800 absolute text-left overflow-hidden shadow" id="mobile-menu">
           <div className="px-10 pt-8 pb-3 space-y-1 sm:px-3">
             {Menu.map((v,i) => 
@@ -107,7 +89,7 @@ const NavBar:React.FC<any> = ({title,description}) => {
             </span>
           )}
           </div>
-        </div> : "" }</motion.nav>
+        </div> : "" }
     </>
   );
   return  <Component />;

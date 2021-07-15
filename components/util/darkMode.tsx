@@ -2,14 +2,20 @@ import React, { useEffect, useState } from 'react'
 
 
 const UseDarkMode = () => {
-    const [theme, setTheme] = useState('dark')
+    const [theme, setTheme] = useState(
+        typeof window !== "undefined" ? localStorage.theme !== undefined ? localStorage.theme : "dark" :"light"
+    )
     const colorTheme = theme === 'dark' ? 'light' : 'dark'
     useEffect(() => {
+      
         const root = window.document.documentElement;
         root.classList.remove(colorTheme);
         root.classList.add(theme);
+       
         theme === 'dark' ?  root.style.backgroundColor = "#1F2937" :  root.style.backgroundColor = "#ffffff" ;
-        console.log(theme,colorTheme)
+        if (typeof window !== "undefined") {
+            localStorage.setItem("theme", theme);
+        }
     }, [theme,colorTheme])
     
     return [colorTheme,setTheme]
