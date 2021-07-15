@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[9],{ilDd:function(e,t,n){"use strict";n.r(t);var a=n("q1tI"),i=n.n(a),c=n("SgMy");t.default=function(){return i.a.createElement(c.a,{title:"Snippets"},i.a.createElement("div",{className:"container text-white pt-4"},i.a.createElement("h1",null,"Snippets")))}}}]);
-//# sourceMappingURL=component---src-pages-snippets-js-f8e1ab9a9defd113f96f.js.map
