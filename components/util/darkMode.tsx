@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 
 
 const UseDarkMode = () => {
-    const [theme, setTheme] = useState(
+    const [theme, setTheme] = useState<any>(
         typeof window !== "undefined" ? localStorage.theme !== undefined ? localStorage.theme : "dark" :"light"
     )
     const colorTheme = theme === 'dark' ? 'light' : 'dark'
@@ -18,7 +18,7 @@ const UseDarkMode = () => {
         }
     }, [theme,colorTheme])
     
-    return [colorTheme,setTheme]
+    return [colorTheme,setTheme] as const
 }
 
 

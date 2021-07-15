@@ -9,7 +9,7 @@ import NavBar from '../components/nav';
 
 
 interface indexProps {
-
+  posts: [] | any;
 }
 
 

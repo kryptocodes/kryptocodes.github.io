@@ -3,7 +3,6 @@ import { DateFormat } from "../util/DateFormat";
 
 import Link from 'next/link'
 
-interface blogPostProps {}
 
 
 const blogPost = ({posts}) => {

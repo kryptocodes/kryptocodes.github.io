@@ -1,7 +1,7 @@
 import React from 'react'
 
 interface indexProps {
-
+    posts: [] | any;
 }
 
 const ProjectIndex: React.FC<indexProps> = ({posts}) => {
