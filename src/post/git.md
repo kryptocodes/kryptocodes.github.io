@@ -1,6 +1,6 @@
 ---
 title: "Git For Newbies"
-date: 2019-07-20T15:12:20+05:30
+date: 2019-07-20
 slug: "three"
 draft: false
 ---

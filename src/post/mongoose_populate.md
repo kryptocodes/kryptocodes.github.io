@@ -1,6 +1,6 @@
 ---
 title: "Working with Mongoose populate"
-date: 2020-04-18T19:57:28+05:30
+date: 2020-04-18
 slug: "Working with Mongoose populate"
 ---
 One caveat before I start: there is [great official documentation](https://mongoosejs.com/docs/populate.html) for populate, from which I have taken quite a bit of information. If I say something that contradicts what the documentation says, assume the documentation is right.

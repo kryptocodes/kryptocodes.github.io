@@ -7,20 +7,13 @@ import { graphql } from 'gatsby'
 const Blog = ({ data }) => {
     return(
         <Wrapper title="Blog">
-        <Style>
           <BlogHead data={data}/>
-          </Style>
         </Wrapper>
     )
 }
 
-const Style = styled.div`
-  padding:2rem 5rem;
 
-  @media screen and (max-width: 960px) {
-    padding:2rem 2rem;
-  }
-`
+
 
 
 

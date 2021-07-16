@@ -1,198 +1,95 @@
-import React, { useState } from 'react';
-import styled from '@emotion/styled'
-import { disableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
+import React, { useState } from "react";
+import UseDarkMode from "./util/UseDarkMode"
+
 import { Link } from 'gatsby'
 
 
 
-//navbar
-import { Spiral as Hamburger } from 'hamburger-react'
-
-const LinkToPage = [
-  {
-    href:"/about",
-    name:"About",
-  },
-  {
-    href:"https://github.com/kryptocodes",
-    name:"Projects",
-  },
-  {
-    href:"/blog",
-    name:"Blog",
-  },{
-    href: "/snippets",
-    name:"Snippets"
-  }
-]
-
-const currentTab = (path) => {
-  const url = typeof window !== 'undefined' ? window.location.href : '';
-  console.log(url)
-  if( url.includes(path)){
-      return {color: '#F0860C'}
-  }
-}
-
 const Nav = () => {
-  const [click, setClick] = useState(false)
+  const [colorTheme,setTheme] = UseDarkMode()
+  const [menu,setMenu] = useState(false)
+  const Menu = [
+    {
+      name:"About",
+      link:"/about"
+    },
+    {
+      name:"Projects",
+      link:"/projects"
+    },
+    {
+      name:"Blog",
+      link:"/posts"
+    }
+  ]
+  const Component = () => (
+    <>
+      <div className="flex justify-between pt-5 pb-5 px-8 items-center rounded-lg shadow-lg dark:bg-transparent bg-white">
+          <div className="flex justify-start lg:w-0 lg:flex-1">
+            <Link href="/">
+              <a className="font-semibold lg:text-2xl md:px-6 lg:px-6 dark:text-white">Srivatsan</a>
+              </Link>
+            </div>
+  
 
-  if(click == true) {
-    const targetElement = document.querySelector(".navbar");
-    disableBodyScroll(targetElement);
-  }
-  else {
-    clearAllBodyScrollLocks();
-  }
+         
+            <div className="w-full block px-16 dark:text-white lg:items-center lg:w-auto hidden md:flex items-center justify-end md:flex-1 lg:w-0">
+                {Menu.map((v,i) => ( 
+                  <span key={i}>
+                    <Link to={v?.link}>
+                <a className="px-5 hover:bg-gray-700 py-2 font-medium rounded-md hover:text-white">{v?.name}</a>
+                </Link>
+                </span>
+                ))}
+               
+              </div>
 
-  const NavBarContainer = () => (
-    <div className='navbar shadow'>
-      <Link to="/">
-        <span className='navbar-brand mx-auto' onClick={() => setClick(false)}>
-          <h4>Srivatsan</h4>
-        </span>
-        </Link>
-      
-        <div className='menu-icon' onClick={() => setClick(!click)}>
-        <Hamburger direction={'left'}  duration={15} color="white" toggled={click} toggle={setClick} />
+             
+
+              <button className="dark:text-white" onClick={() => setTheme(colorTheme) }>
+                  {colorTheme === 'dark' ? 
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                </svg>  
+
+                : <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+              </svg>
+                }
+
+                </button>
+                <div className="block md:hidden lg:hidden dark:text-white">
+    <button onClick={() => setMenu(!menu)} className="flex items-center mx-auto px-3 py-2 text-xl rounded text-teal-200 border-teal-400">
+   
+   {menu ? <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+</svg> : <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
+</svg> 
+
+}
+    </button>
+  </div>
+        
         </div>
-        <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-
-        {LinkToPage.map((value) => 
-          <li className='nav-item'>
-            <Link to={value.href}>
-              <a style={currentTab(value.href)} className='nav-links' onClick={() => setClick(false)}>
-              {value.name}
-              </a>
+        {menu ? <div className="md:hidden w-full  bg-white dark:bg-gray-800 absolute text-left overflow-hidden shadow" id="mobile-menu">
+          <div className="px-10 pt-8 pb-3 space-y-1 sm:px-3">
+            {Menu.map((v,i) => 
+            <span key={i}>
+              <Link to={v?.link}>
+            <a
+              className="dark:text-white block px-3 py-5 rounded-md text-lg font-medium"
+            >
+             {v?.name}
+            </a>
             </Link>
-          </li>)}
-        </ul>
-      </div>
-  )
-
-  return (
-    <Style>
-    <NavBarContainer className="shadow-lg"/>
-  </Style>
+            </span>
+          )}
+          </div>
+        </div> : "" }
+    </>
   );
-}
+  return  <Component />;
+};
 
-
-const Style = styled.div`
-.navbar {
-  left: 0;
-  width: 100%;
-  background: #333333;
-  height: 72px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.2rem;
-  font-weight:600;
-  z-index:999;
-}
-
-a {
-  color:white;
-  text-decoration: none;
-
-  &:hover{
-    color:#F0860C;
-  }
-}
-
-.navbar-brand {
-  color: #F0860C;
-  h4 {
-  font-weight:700;
-  margin-bottom:1rem;
-}
-}
-
-.nav-menu {
-  display: grid;
-  grid-template-columns: repeat(5, auto);
-  list-style: none;
-  text-align: center;
-  width: 60vw;
-  justify-content: end;
-  margin-right: 2rem;
-}
-.nav-item {
-  color: white;
-  display: flex;
-  align-items: center;
-  height: 60px;
-}
-.nav-links {
-  color: white;
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-}
-.nav-links:hover {
-  color: #F3B431;
-  transition: all 0.2s ease-out;
-}
-
-.nav-links-mobile {
-  display: none;
-}
-.menu-icon {
-  display: none;
-}
-@media screen and (max-width: 960px) {
-  .NavbarItems {
-    position: relative;
-  }
-  .nav-item {
-    height: 4rem;
-  }
-
-  .navbar-brand {
-    padding: 1rem;
-  }
-  .nav-menu {
-    display: flex;
-    grid-gap: 0px;
-    flex-direction: column;
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    top: 70px;
-    left: -100%;
-    padding-top:2rem;
-    opacity: 1;
-    transition: all 0.5s ease;
-    background-color:#333333;
-  }
-  .nav-menu.active {
-    padding-right:30px;
-    align-items: center;
-    left: 0px;
-    opacity: 1;
-    transition: all 0.5s ease;
-    z-index: 1;
-  }
-  .nav-links {
-    text-align: center;
-    padding: 2rem;
-    width: 100%;
-    display: table;
-  }
-  .nav-links:hover {
-    color: #F3B431;
-  }
-
- 
-  .menu-icon {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-45%, 25%);
-    cursor: pointer;
-  }
-}
-`
-
-export default Nav
+export default Nav;

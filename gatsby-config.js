@@ -25,6 +25,8 @@ module.exports = {
           path: `${__dirname}/src/post`,
         },
       },
+      
       `gatsby-plugin-react-head`,
+      `gatsby-plugin-postcss`,
     ]
 }

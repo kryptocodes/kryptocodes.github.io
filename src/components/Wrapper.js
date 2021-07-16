@@ -1,7 +1,6 @@
 import React from 'react'
 import Nav from './navBar'
 import Seo from './Seo'
-import '../../styles/bootstrap.min.css'
 import '../../styles/global.css'
 
 const Wrapper = ({title,children}) => {
