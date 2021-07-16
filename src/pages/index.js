@@ -7,8 +7,10 @@ import BlogPost from '../components/landing/BlogPost'
 const index = ({data}) => {
   return (
       <Wrapper title="Home">
+        <div className="px-6">
         {Home()}
         <BlogPost data={data}/>
+        </div>
       </Wrapper>
   )
 }
