@@ -5,7 +5,6 @@ import { Link } from 'gatsby'
 
 
 const BlogPost = ({data}) => {
-  console.log(data)
   const { posts } = data.blog
   const CardComponent = ({id,title,description,date}) => {
    
@@ -33,7 +32,7 @@ const BlogPost = ({data}) => {
 
   return (
     <>
-      <div className="container lg:px-28 my-8 dark:text-white">
+      <div className="container lg:px-28 my-8 mx-auto dark:text-white">
         <h1 className="text-2xl text-semibold">Recent Posts</h1>
         <div className="grid lg:grid-cols-3 md:grid-col-6">
         {posts.map((v) => 

@@ -6,7 +6,7 @@ const Projects = () => {
     return (
     <>
       <Wrapper title="Projects">
-      <div className="container lg:px-32">
+      <div className="container mx-auto lg:px-32">
         <h1 className="dark:text-white text-4xl p-4">Projects</h1>
         <p className="dark:text-white p-4 text-lg">Most of my projects can be found at Github</p>
         {Content?.map((v) =>
@@ -20,6 +20,14 @@ const Projects = () => {
 
 
 const Content = [
+  {
+    "id": "8294f3bc-3b0d-4264-adbd-fd7c85362d18b",
+    "Link": "https://github.com/kryptocodes/XLSX-Reader",
+    "Description": "XLSX Reader is an web app which is built top of SheetJS.Read, edit, and export spreadsheets Works in web browsers",
+    "Image": "https://user-images.githubusercontent.com/40030019/126058660-2069ad8d-0ec1-43b3-9630-300bc87e55e4.png",
+    "TechStack": "Vite,React JS,SheetJS,MongoDB",
+    "Name": "XLSX Reader"
+  },
   {
     "id": "8294f3bc-3b0d-4264-adbd-fd7c85362d18",
     "Link": "https://github.com/kryptocodes/lireddit_backend",
@@ -48,7 +56,7 @@ const Content = [
     "id": "3446e964-52cc-4ed3-9df0-a2afcc865a6a",
     "Link": "https://gpms.vercel.app",
     "Description": "A Complete CMS System, which\nallows a resident student to apply\nfor his/her Gate Pass Online also\ngenerates QR Code when the\nconcerned authority approves the\npass. With Four different role\ndashboard integrated with\nnotification support and offline\nPWA.",
-    "Image": "https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F2b0a1437-0d25-4f88-8f67-58dd1ba76a3c%2FSlide_4_3_-_2.png?table=block&id=92562b48-d99c-4bdf-b42d-b9eedfe6a808&spaceId=6cc22693-0a0e-4c5a-bd99-19a823ffd9a1&width=3070&userId=a9fac667-565f-44cb-a042-5b69e7b156df&cache=v2",
+    "Image": "https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F7230c662-2972-4502-99a1-7e7e6a1c5c4c%2FSlide_4_3_-_2.png?table=block&id=a4ef5f46-3b97-4318-a07d-d6e35c618a5b&spaceId=6cc22693-0a0e-4c5a-bd99-19a823ffd9a1&width=3070&userId=a9fac667-565f-44cb-a042-5b69e7b156df&cache=v2",
     "TechStack": "MongoDB,\nMongoose ODM,Express,\nNode JS, React",
     "Name": "Gate Pass Management System "
   },

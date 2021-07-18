@@ -26,7 +26,7 @@ const Nav = () => {
     <>
       <div className="flex justify-between pt-5 pb-5 px-8 items-center rounded-lg shadow-lg dark:bg-transparent bg-white">
           <div className="flex justify-start lg:w-0 lg:flex-1">
-            <Link href="/">
+            <Link to="/">
               <a className="font-semibold lg:text-2xl md:px-6 lg:px-6 dark:text-white">Srivatsan</a>
               </Link>
             </div>

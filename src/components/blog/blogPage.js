@@ -11,7 +11,7 @@ const BlogHead = ({data}) => {
           className="rounded-lg bg-purple-500 dark:bg-blue-500 dark:bg-opacity-50 md:shadow-xl pt-5 pb-5 mx-2"
         >
           <div className="px-5">
-              <Link href={id}>
+              <Link to={id}>
             <a className="text-3xl pb-2">
               {title}
             </a>
@@ -28,7 +28,7 @@ const BlogHead = ({data}) => {
   
     return (
       <>
-        <div className="container px-6 lg:px-28 my-8 dark:text-white">
+        <div className="container mx-auto px-6 lg:px-28 my-8 dark:text-white">
           <h1 className="text-2xl px-2 text-bold">Blogs</h1>
           {posts.map((v) => 
           <>
