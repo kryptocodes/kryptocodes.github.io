@@ -9,8 +9,8 @@ const Projects = () => {
       <div className="container mx-auto lg:px-32">
         <h1 className="dark:text-white text-4xl p-4">Projects</h1>
         <p className="dark:text-white p-4 text-lg">Most of my projects can be found at Github</p>
-        {Content?.map((v) =>
-        <ProjectIndex posts={v} />
+        {Content?.map((v,i) =>
+        <ProjectIndex posts={v} i={i} />
         )}
        </div>
        </Wrapper>

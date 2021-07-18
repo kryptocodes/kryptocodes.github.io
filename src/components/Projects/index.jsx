@@ -1,13 +1,13 @@
 import React from 'react'
 
 
-const ProjectIndex = ({posts}) => {
+const ProjectIndex = ({posts,i}) => {
     return (
         <div>
              <div className="lg:px-2 md:px-4 px-4 pb-5">
             <figure className="md:flex dark:bg-gray-900 shadow-lg dark:text-white bg-gray-200 dark:bg-opacity-50 rounded-xl md:p-0">
             {posts?.Image  ? 
-            <img loading="lazy" className="w-auto lg:w-1/2 justify-end h-auto md:h-auto md:w-1/2 x-auto" src={posts?.Image} alt="project" /> : "" }
+            <img loading="lazy" className={`w-auto lg:w-1/2 ${i % 2 == 0 ? 'order-first' : 'order-last'} h-auto md:h-auto md:w-1/2 x-auto`} src={posts?.Image} alt="project" /> : "" }
             <div className="pt-6 p-4 md:p-8">
             
                 <p className="lg:text-4xl pb-6 md:text-2xl text-xl font-semibold">

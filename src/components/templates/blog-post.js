@@ -43,6 +43,17 @@ const Style = styled.div`
     padding: 3px 2px;
     font-weight: 600;
   }
+  h1:first-child {
+    margin-top: 0;
+  }
+  h2 {
+    font-size: 1.5em;
+    margin-top: 1.1em;
+  }
+  h3 {
+    font-size: 1.25em;
+    margin-top: 1em;
+  }
   p {
     padding: 3px 2px;
   }

@@ -72,7 +72,7 @@ const Nav = () => {
   </div>
         
         </div>
-        {menu ? <div className="md:hidden w-full  bg-white dark:bg-gray-800 absolute text-left overflow-hidden shadow" id="mobile-menu">
+        {menu ? <div className="md:hidden w-full z-50 bg-white dark:bg-gray-800 absolute text-left overflow-hidden shadow" id="mobile-menu">
           <div className="px-10 pt-8 pb-3 space-y-1 sm:px-3">
             {Menu.map((v,i) => 
             <span key={i}>
