@@ -6,7 +6,7 @@ const Projects = () => {
     return (
     <>
       <Wrapper title="Projects">
-      <div className="container mx-auto lg:px-32">
+      <div className="container mx-auto px-2 lg:px-32">
         <h1 className="dark:text-white text-4xl p-4">Projects</h1>
         <p className="dark:text-white p-4 text-lg">Most of my projects can be found at Github</p>
         {Content?.map((v,i) =>
@@ -32,7 +32,7 @@ const Content = [
     "id": "8294f3bc-3b0d-4264-adbd-fd7c85362d18",
     "Link": "https://github.com/kryptocodes/lireddit_backend",
     "Description": "LiReddit is similar to site like Reddit\nor HackerNews you subscribe to\nforums you re interested in, post\nlinks and discussions, then vote, and\ncomment on them.",
-    "Image": "https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F5aff90ee-afc4-4d8c-9ae2-4b3f1c13751a%2FSlide_4_3_-_1_(1).png?table=block&id=4083c3cd-b88e-445b-9388-b77b0a78d119&spaceId=6cc22693-0a0e-4c5a-bd99-19a823ffd9a1&width=3070&userId=a9fac667-565f-44cb-a042-5b69e7b156df&cache=v2",
+    "Image": "https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fb7ea701c-0073-49b3-b2cf-6bb3cacbb6c1%2FMacBook_-_1.png?table=block&id=852c9a6d-bf0e-4db6-9bfb-7d1265a8a8eb&spaceId=6cc22693-0a0e-4c5a-bd99-19a823ffd9a1&width=3070&userId=a9fac667-565f-44cb-a042-5b69e7b156df&cache=v2",
     "TechStack": "TypeScript,GraphQL,URQL,Node JS,\nPostgreSQL,TypeORM,Redis,Next JS",
     "Name": "LiReddit"
   },
