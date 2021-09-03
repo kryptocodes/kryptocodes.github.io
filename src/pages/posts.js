@@ -1,7 +1,6 @@
 import React from 'react'
 import BlogHead from '../components/blog/blogPage'
 import Wrapper from '../components/Wrapper'
-import styled from '@emotion/styled'
 import { graphql } from 'gatsby'
 
 const Blog = ({ data }) => {

@@ -11,7 +11,7 @@ What's popping guys
 I'm a big fan of Notion who else is not yeah!, all my routine schedules, to Todo, basically everything fits into notion of course Notion is the best productivity app.This blog post is all about how i tried migrating to notion cms and how badly failed (oh wait no! i did tho)
 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/aqO4SmJBlIA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="auto" height="auto" src="https://www.youtube.com/embed/aqO4SmJBlIA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 src: [Captain Sinbad](https://youtu.be/aqO4SmJBlIA) 
 
