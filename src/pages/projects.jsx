@@ -24,7 +24,7 @@ const Content = [
     "id": "8294f3bc-3b0d-4264-adbd-fd7c85362d18a",
     "Link": "https://erpdashboard.vercel.app",
     "Description": "ERP Management is a feature packed. ERP Management is built with Next JS,Firebase, Tailwind CSS.Implemented all the features you might need to start a new Web application.",
-    "Image": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/04522d1b-eeeb-45f7-a6d4-c3962dd8f3c3/ERP_Dashboard.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210903%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210903T083219Z&X-Amz-Expires=86400&X-Amz-Signature=bb78b4090451022cf5087044f4c10c0cccd583d5bc03e2e59186a0f6063fa4c6&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22ERP_Dashboard.png%22",
+    "Image": `${require('../images/erp_dashboard.png')}`,
     "TechStack": "Next JS,Firebase,Tailwind CSS",
     "Name": "ERP Dashboard"
   },
