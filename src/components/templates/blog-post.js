@@ -51,7 +51,8 @@ const Style = styled.div`
     margin-top: 1.1em;
   }
   h3 {
-    font-size: 1.25em;
+    font-size: 1.5em;
+    font-weight: 600;
     margin-top: 1em;
   }
   p {
@@ -137,6 +138,23 @@ const Style = styled.div`
       monospace;
   }
  
+  iframe {
+    border: 0;
+    width: 100%;
+    height: 100%;
+    min-height: auto;
+  }
+
+  a {
+    font-weight: 600;
+    color: #ffc107;
+    text-decoration: none;
+  }
+
+ //add style to class light 
+  .light {
+    color: #374151;
+  }
 
 `;
 export const query = graphql`

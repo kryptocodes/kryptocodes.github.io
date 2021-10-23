@@ -69,6 +69,14 @@ const Content = [
     "Name": "Gate Pass Management System "
   },
   {
+    "id": "8294f3bc-3b0d-4264-adbd-fd7c85362d19",
+    "Link": "https://brbatask.netlify.app/",
+    "Description": "BrBa is an webpapp which utilizes Breaking bad api from https://breakingbadapi.com",
+    "Image": `${require('../images/brba.webp')}`,
+    "TechStack": "React,Axios",
+    "Name": "Breaking Bad Characters"
+  },
+  {
     "id": "60461d99-d103-4ad9-9a42-a4b93f2215ff",
     "Description": "Krypton Kernel lite mod kernel for X00TD and Lettuce devices",
     "TechStack": "C",
