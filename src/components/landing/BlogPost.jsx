@@ -9,9 +9,9 @@ const BlogPost = ({data}) => {
   const CardComponent = ({id,title,description,date}) => {
    
     return(
-    <div className="container  mt-5 my-5 text-white">
+    <div className="container mt-5 my-5 text-white">
       <div
-        className="rounded-lg  bg-purple-500 dark:bg-blue-500 dark:bg-opacity-50 md:shadow-xl pt-5 pb-5 mx-2"
+        className="rounded-lg h-full  bg-purple-500 dark:bg-blue-500 dark:bg-opacity-50 md:shadow-xl pt-5 pb-5 mx-2"
        
       >
         <div className="px-5">
