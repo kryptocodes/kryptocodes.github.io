@@ -9,12 +9,39 @@
     <script async src="https://cdn.splitbee.io/sb.js"></script>
 
 
+
     <style>
         body {
             width: 50%;
             margin: 0 auto;
 
         }
+
+        .dark-mode-button {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            z-index: 1000;
+            background-color: transparent;
+            color: black;
+            border: none;
+            cursor: pointer;
+            width: 50px;
+        }
+
+        .button-dark {
+            visibility: hidden;
+        }
+
+        #dark-mode-icon {
+            display: none;
+        }
+
+        .button-light {
+            visibility: visible;
+        }
+
+
 
         @media only screen and (max-width: 600px) {
             body {
@@ -27,7 +54,8 @@
 
 
 
-<body>
+<body data-mode="dark">
+
     <h1 style="cursor: pointer; 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 2rem;
@@ -35,6 +63,21 @@
     " onclick="window.open(`https://github.com/kryptocodes`, '_blank')">
         kryptocodes
     </h1>
+    <button id="dark-mode-toggle" class="dark-mode-button">
+        <svg xmlns="http://www.w3.org/2000/svg" id="dark-mode-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+        </svg>
+
+
+        <svg xmlns="http://www.w3.org/2000/svg" id="light-mode-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
+        </svg>
+
+    </button>
 
     <br />
     <p style="font-style: normal; font-size: 1rem; text-align: center;">
@@ -44,7 +87,8 @@
 
     <h2>about me </h2>
     <p>
-        yo i'm srivatsan aka kryptocodes, a full stack web3 developer with 2 years of experience in building dapps and
+        yo i'm srivatsan aka kryptocodes, a full stack web3 developer with 2 years of experience in building dapps
+        and
         architecting solutions for the web3. btw i've won a few hackathons and built some cool stuff on web2 too.
 
     </p>
@@ -55,7 +99,8 @@
      ">
         <h2>proof of work</h2>
         <p>
-            <a href="https://copilot.polygon.technology" target="_blank">Polygon Copilot</a> - Web3 Copilot to help you
+            <a href="https://copilot.polygon.technology" target="_blank">Polygon Copilot</a> - Web3 Copilot to help
+            you
             navigate the Polygon ecosystem
         </p>
         <p>
@@ -64,15 +109,18 @@
 
         </p>
         <p>
-            <a href="https://0xmint.io" target="_blank">Mint NFT</a> - world simplest NFT minter on Polygon, mint your
+            <a href="https://0xmint.io" target="_blank">Mint NFT</a> - world simplest NFT minter on Polygon, mint
+            your
             NFTs
             in 3 clicks
-            whether it's a single NFT or a collection of 10,000 NFTs, soulbound or tradable, you can mint it all on Mint
+            whether it's a single NFT or a collection of 10,000 NFTs, soulbound or tradable, you can mint it all on
+            Mint
             NFT
         </p>
 
         <p>
-            <a href="https://polygon.coinbase.com" target="_blank">Coinbase NFT</a> - Coinbase Wallet Collab - creating
+            <a href="https://polygon.coinbase.com" target="_blank">Coinbase NFT</a> - Coinbase Wallet Collab -
+            creating
             a
             new NFT experience for Coinbase Wallet users
             with 1.2Million+ mints - the largest NFT drop in history and did a record 100k mints in 1 day
@@ -93,7 +141,8 @@
         </p>
 
         <p>
-            <a href="https://www.producthunt.com/posts/nft-wrapped" target="_blank">NFT Wrapped 2022</a> - get your NFTs
+            <a href="https://www.producthunt.com/posts/nft-wrapped" target="_blank">NFT Wrapped 2022</a> - get your
+            NFTs
             stats for the year whether you are rekt, mooning or just holding
             got featured on Product Hunt and 5th most upvoted product of the day
         </p>
@@ -132,6 +181,61 @@
     </p>
 
 
+    <script>
+        const darkModeToggle = document.getElementById('dark-mode-toggle');
+        const body = document.body;
+        const moonIcon = document.getElementById('dark-mode-icon');
+        const sunIcon = document.getElementById('light-mode-icon');
+
+        const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+
+        if (currentTheme === 'dark') {
+            body.setAttribute('data-mode', 'dark');
+            toggleDarkMode();
+        } else {
+            body.setAttribute('data-mode', 'light');
+            toggleDarkMode();
+        }
+
+        function toggleDarkMode() {
+            const currentMode = body.getAttribute('data-mode');
+
+            if (currentMode === 'light') {
+                localStorage.setItem('theme', 'dark');
+                body.setAttribute('data-mode', 'dark');
+                body.style.backgroundColor = '#333';
+                body.style.color = '#fff';
+                body.style.transition = 'all 0.5s ease-in-out';
+                const anchors = document.getElementsByTagName('a');
+                for (let i = 0; i < anchors.length; i++) {
+                    anchors[i].style.color = '#00bfff';
+                }
+                moonIcon.style.display = 'block';
+                sunIcon.style.display = 'none';
+                darkModeToggle.style.color = 'white';
+
+            } else {
+                localStorage.setItem('theme', 'light');
+                body.setAttribute('data-mode', 'light');
+                body.style.backgroundColor = '#fff';
+                body.style.color = '#333';
+                body.style.transition = 'all 0.5s ease-in-out';
+                const anchors = document.getElementsByTagName('a');
+
+                for (let i = 0; i < anchors.length; i++) {
+                    anchors[i].style.color = '#0000ee';
+                }
+                moonIcon.style.display = 'none';
+                sunIcon.style.display = 'block';
+                darkModeToggle.style.color = 'black';
+            }
+        }
+
+        toggleDarkMode();
+
+        darkModeToggle.addEventListener('click', toggleDarkMode);
+
+    </script>
 
 
 </body>
